@@ -1,0 +1,11 @@
+configuration_id,architecture,quantization,runtime,threads,selection_validation_accuracy,artifact_size_mb,trial_median_mean_ms,trial_p95_mean_ms,pareto_median,pareto_p95
+mobilenet_v2_dynamic_int8__xnnpack_cpu__1t,mobilenet_v2,dynamic_int8,xnnpack_cpu,1,0.8326670474014849,2.4274826049804688,390.04175,411.95645,True,True
+mobilenet_v2_float16__xnnpack_cpu__1t,mobilenet_v2,float16,xnnpack_cpu,1,0.8398058252427184,4.327350616455078,393.40625,409.203725,True,True
+mobilenet_v2_float32__xnnpack_cpu__1t,mobilenet_v2,float32,xnnpack_cpu,1,0.8406624785836665,8.52376937866211,394.74225,412.622425,True,True
+mobilenet_v2_full_int8__xnnpack_cpu__1t,mobilenet_v2,full_int8,xnnpack_cpu,1,0.826956025128498,2.621002197265625,163.90699999999998,182.271925,True,False
+mobilenet_v2_full_int8__xnnpack_cpu__2t,mobilenet_v2,full_int8,xnnpack_cpu,2,0.826956025128498,2.621002197265625,166.43574999999998,181.49415,False,True
+mobilenet_v3_small_dynamic_int8__xnnpack_cpu__1t,mobilenet_v3_small,dynamic_int8,xnnpack_cpu,1,0.7535693889206168,1.091278076171875,351.2605,366.637425,False,True
+mobilenet_v3_small_dynamic_int8__xnnpack_cpu__4t,mobilenet_v3_small,dynamic_int8,xnnpack_cpu,4,0.7535693889206168,1.091278076171875,350.0325,371.2715,True,False
+mobilenet_v3_small_float16__xnnpack_cpu__2t,mobilenet_v3_small,float16,xnnpack_cpu,2,0.7398629354654483,1.8762168884277344,349.5725,367.0457,True,False
+mobilenet_v3_small_full_int8__builtin_cpu__2t,mobilenet_v3_small,full_int8,builtin_cpu,2,0.5588235294117647,1.1940078735351562,150.28375,162.34404999999998,False,True
+mobilenet_v3_small_full_int8__builtin_cpu__4t,mobilenet_v3_small,full_int8,builtin_cpu,4,0.5588235294117647,1.1940078735351562,146.76675,164.586725,True,False

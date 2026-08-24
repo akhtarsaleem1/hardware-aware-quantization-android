@@ -1,0 +1,27 @@
+{
+  "status": "FINAL_TEST_SESSION_STARTED_DO_NOT_RERUN",
+  "started_utc": "2026-08-24T09:23:43.864746+00:00",
+  "frozen_manifest": "reports/final_test_manifest.json",
+  "frozen_manifest_sha256": "e6c4b49b8d7f1684f6c1d7036b957b5b4e08134394a5e01e34b5f3bc995d75e0",
+  "test_manifest_sha256": "567b554aac8cfe669a00451c121420b10f751e072c0c74ca2213ab31ed9dae86",
+  "report_target": "results/final/final_test_report.json",
+  "predictions_target": "results/final/final_test_predictions.csv",
+  "gpu_report": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.13.15",
+    "tensorflow": "2.21.0",
+    "physical_gpus": [
+      {
+        "name": "/physical_device:GPU:0",
+        "device_type": "GPU",
+        "compute_capability": [
+          7,
+          5
+        ],
+        "device_name": "NVIDIA GeForce GTX 1650"
+      }
+    ],
+    "nvidia_smi": "NVIDIA GeForce GTX 1650, 4096 MiB, 610.88",
+    "policy": "GPU_REQUIRED_ABORT_ON_CPU_FALLBACK"
+  }
+}

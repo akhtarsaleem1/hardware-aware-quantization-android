@@ -1,0 +1,10 @@
+{
+  "status": "READY_FOR_AUTHOR_SUBMISSION_REVIEW",
+  "root": "/mnt/d/AndroidStudioProjects/project/hardware_aware_quantization_research",
+  "scientific_blockers": [],
+  "human_metadata_actions": [],
+  "reference_count": 34,
+  "apk_sha256": "dd462d33fb0e175e51f0b16f07bad14c1092e20a2a5a9519914ef9b07f3baf1b",
+  "clarivate_scie_directly_verified": false,
+  "clarivate_note": "Human must verify both ISSNs in the live Master Journal List before any SCIE claim."
+}

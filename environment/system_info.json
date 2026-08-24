@@ -1,0 +1,76 @@
+{
+  "captured_at_local": "2026-08-21",
+  "timezone": "Asia/Karachi",
+  "host": {
+    "operating_system": "Microsoft Windows 11 Home",
+    "os_version": "10.0.26200 Build 26200",
+    "architecture": "x64",
+    "manufacturer": "HP",
+    "model": "Victus by HP Gaming Laptop 15-fa0xxx",
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "physical_cores": 8,
+    "logical_processors": 12,
+    "ram_mb": 32436,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce GTX 1650",
+        "reported_adapter_bytes": 4293918720,
+        "nvidia_smi_memory": "4096 MiB",
+        "nvidia_driver_reported_by_nvidia_smi": "610.88"
+      },
+      {
+        "name": "Intel(R) UHD Graphics",
+        "reported_adapter_bytes": 1073741824
+      }
+    ],
+    "workspace_drive_free_bytes": 113118801920
+  },
+  "software": {
+    "system_python_launcher": "present but no registered Python installation",
+    "bundled_workspace_python": "3.12.13",
+    "bundled_workspace_tensorflow_installed": false,
+    "bundled_workspace_pytorch_installed": false,
+    "prior_project_virtualenv_execution": "blocked by environment access controls during inspection",
+    "cuda_runtime_for_training": "VERIFIED_WSL2_TENSORFLOW_GPU",
+    "wsl": "Ubuntu 26.04 / WSL2 kernel 6.18.33.2",
+    "training_python": "uv-managed CPython 3.13.15",
+    "training_tensorflow": "2.21.0",
+    "tensorflow_gpu": "NVIDIA GeForce GTX 1650; compute capability 7.5; 2244 MiB process allocation",
+    "flutter": "3.47.1 stable",
+    "dart": "3.13.1",
+    "adb": "1.0.41 / platform-tools 37.0.0-14910828",
+    "android_sdk_root": "C:/Users/ASK/AppData/Local/Android/sdk",
+    "java": "not available on PATH during inspection"
+  },
+  "connected_android_device": {
+    "adb_serial_redacted": true,
+    "manufacturer": "realme",
+    "model": "RMX3760",
+    "android_release": "15",
+    "api_level": 35,
+    "soc_manufacturer": "Spreadtrum",
+    "soc_model": "UMS9230H",
+    "board_platform": "ums9230",
+    "hardware": "ums9230_hulk",
+    "abis": ["arm64-v8a", "armeabi-v7a", "armeabi"],
+    "online_cpu_count": 8,
+    "memory_total_kb": 5905892,
+    "physical_screen_pixels": [720, 1600],
+    "opengl_es_encoded_version": 196610,
+    "thermal_hal": "2.0 connected",
+    "thermal_status_at_capture": 0,
+    "temperature_snapshot_celsius": {
+      "battery": 39.9,
+      "soc": 56.707,
+      "gpu": 49.33,
+      "power_amplifier": 43.419
+    },
+    "note": "Temperature values are a one-time environment snapshot, not benchmark results."
+  },
+  "limitations": [
+    "No TensorFlow or PyTorch package was available in the bundled workspace Python.",
+    "TensorFlow GPU execution is verified under WSL2; the process allocation is smaller than physical VRAM.",
+    "Java was not available on PATH, although Flutter/Android tooling exists.",
+    "Only one Android phone was connected during Phase 0 inspection."
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "status": "PUBLICATION_SUPPLEMENT_COMPLETE",
+  "raw_benchmark": "benchmark/raw/final_realme_RMX3760_protocol1_2_bounded_trials_1_2.csv",
+  "raw_benchmark_sha256": "5c129b5d6adfa10e3db3f4f66e118665470e89ceffd780d414dcc06483dd762b",
+  "analysis_summary": "results/final/analysis_summary.json",
+  "analysis_summary_sha256": "97b2418758e352e2856f4c9c8c6499f56803a91c9cc08208e87b4c4530882e63",
+  "table_count": 9,
+  "figure_png_count": 7,
+  "figure_pdf_count": 7,
+  "artifacts": [
+    {
+      "path": "results/final/publication_supplement/figures/accuracy_latency_tradeoff.pdf",
+      "sha256": "2230e8a8b7f65a65f26cf0e32c45dc189c61e483dea97dfff730cd53208f7678",
+      "bytes": 23995
+    },
+    {
+      "path": "results/final/publication_supplement/figures/accuracy_latency_tradeoff.png",
+      "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+      "bytes": 400770
+    },
+    {
+      "path": "results/final/publication_supplement/figures/benchmark_distribution.pdf",
+      "sha256": "4f570821df614c7089c001f99f2f79dd4ea3ac74fae3ebcb22f9a69ab8fdde26",
+      "bytes": 49088
+    },
+    {
+      "path": "results/final/publication_supplement/figures/benchmark_distribution.png",
+      "sha256": "f301d510e5cf0bdf4ad785800cc0584b984142d393d82a62dd645e4a8d78d276",
+      "bytes": 618753
+    },
+    {
+      "path": "results/final/publication_supplement/figures/latency_comparison.pdf",
+      "sha256": "371d7403b71fc38d9bde76192b5e08d168a78abf1f1735497ef8f0cf3af34ee1",
+      "bytes": 17251
+    },
+    {
+      "path": "results/final/publication_supplement/figures/latency_comparison.png",
+      "sha256": "c0c223c246321f2c3a3bcd341ad04b0c8222060974f63dcb17557df240c963ee",
+      "bytes": 542466
+    },
+    {
+      "path": "results/final/publication_supplement/figures/model_architecture.pdf",
+      "sha256": "1d7e11dea19de2b35165e96003038f998c1d3e179a65b7c1415363edf10d0bff",
+      "bytes": 13586
+    },
+    {
+      "path": "results/final/publication_supplement/figures/model_architecture.png",
+      "sha256": "33feaa2018afafba34abb0bf18e9d32d5d74ae89a534e4c934dfc351665ff15c",
+      "bytes": 190903
+    },
+    {
+      "path": "results/final/publication_supplement/figures/model_size_comparison.pdf",
+      "sha256": "b1474449fab6607f6e83a9663a206e446a4750786a0bbce68c23a542fefb06b3",
+      "bytes": 16624
+    },
+    {
+      "path": "results/final/publication_supplement/figures/model_size_comparison.png",
+      "sha256": "9b7f4c6611922a74a3d29549c93c25a1daacd386025668ce2116fbed549c4090",
+      "bytes": 205704
+    },
+    {
+      "path": "results/final/publication_supplement/figures/pareto_front.pdf",
+      "sha256": "2230e8a8b7f65a65f26cf0e32c45dc189c61e483dea97dfff730cd53208f7678",
+      "bytes": 23995
+    },
+    {
+      "path": "results/final/publication_supplement/figures/pareto_front.png",
+      "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+      "bytes": 400770
+    },
+    {
+      "path": "results/final/publication_supplement/figures/runtime_comparison.pdf",
+      "sha256": "70728d04ee8479d9cda7bf574e7747e8db508b0b6a1aacfb096f2fcf881de73e",
+      "bytes": 15606
+    },
+    {
+      "path": "results/final/publication_supplement/figures/runtime_comparison.png",
+      "sha256": "88ddb283b4ea30cae1f25e72fa7efb3faca43e242ef96b181d52b0968c637ad3",
+      "bytes": 185535
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_1_dataset_training_configuration.csv",
+      "sha256": "a623f7f405b3d7627483dde00d514aba5d864962b7ccc77b741fdfe2b5e5fec8",
+      "bytes": 805
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_2_model_architecture_comparison.csv",
+      "sha256": "231a8484a3e82c20ae590f12b10b4636b3c143df6d0f2a141327c036f5ddb710",
+      "bytes": 612
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_3_accuracy_metrics.csv",
+      "sha256": "4410825ff29a5531cbabb71613eb2eb8b47a38d994bf3f6567fbb5e942ee86c7",
+      "bytes": 2553
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_4_quantization_model_sizes.csv",
+      "sha256": "6b9c9fb0dac87052e0cc5e99fef35a069b3a20d38e23004665b13a780ee29247",
+      "bytes": 1685
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_5_android_latency_statistics.csv",
+      "sha256": "e713a9ddeb9fb9dc86e9cf030b4ae27469a431bcb29b501b995e9471a2d8e08d",
+      "bytes": 16841
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_6_memory_measurements.csv",
+      "sha256": "5b5d0a18f3f5355eae92e8ff1f4e129657de722b2b3a47b19cccb2a8712a233a",
+      "bytes": 8527
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_7_runtime_delegate_comparison.csv",
+      "sha256": "23483e3a262027cbe36b11b39f09c928dd9e1ef569fd7f525fdd015260c92d70",
+      "bytes": 892
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_8_pareto_efficient_configurations.csv",
+      "sha256": "f741e5ab130582922976e93f9bdc9dbdbacf2f60bf4f5a2b998187493fdfe692",
+      "bytes": 1711
+    },
+    {
+      "path": "results/final/publication_supplement/tables/table_9_hardware_aware_recommendations.csv",
+      "sha256": "1294a722db8415527028721331618a2a9a8303ab27b969e48d77d50d0fecf8ac",
+      "bytes": 2827
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "purpose": "flatbuffer allocation only; delegate compatibility is separate",
+  "runtime": "builtin_without_default_delegates",
+  "variants": {
+    "mobilenet_v2_20260821T145425Z__dynamic_int8": {
+      "status": "success",
+      "path": "models/tflite/mobilenet_v2/20260821T145425Z/mobilenet_v2_20260821T145425Z__dynamic_int8.tflite",
+      "size_bytes": 2545400,
+      "sha256": "97e33bb8b77f611d54bdce32a39c325b54b8d1d0b5a6d401adea5c5bbb182b8f",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ]
+    },
+    "mobilenet_v2_20260821T145425Z__float16": {
+      "status": "success",
+      "path": "models/tflite/mobilenet_v2/20260821T145425Z/mobilenet_v2_20260821T145425Z__float16.tflite",
+      "size_bytes": 4537556,
+      "sha256": "801130c48bc49023dd5481bab243c5909309bb5630b0b1d4594ca5ef1ab954dd",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ]
+    },
+    "mobilenet_v2_20260821T145425Z__float32": {
+      "status": "success",
+      "path": "models/tflite/mobilenet_v2/20260821T145425Z/mobilenet_v2_20260821T145425Z__float32.tflite",
+      "size_bytes": 8937820,
+      "sha256": "bec15e3963d46e241acd9c906831107e97b4c00b81c895257a4321545dcd738d",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ]
+    },
+    "mobilenet_v2_20260821T145425Z__full_int8": {
+      "status": "success",
+      "path": "models/tflite/mobilenet_v2/20260821T145425Z/mobilenet_v2_20260821T145425Z__full_int8.tflite",
+      "size_bytes": 2748320,
+      "sha256": "0b1cdd47d0b7d94504c62d7160b431a69814006e3132b126ddc5b5bc97a4246d",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "int8",
+          "scale": 1.0,
+          "zero_point": -128
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "int8",
+          "scale": 0.00390625,
+          "zero_point": -128
+        }
+      ]
+    }
+  }
+}

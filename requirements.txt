@@ -1,0 +1,10 @@
+# Install TensorFlow only after confirming a compatible Python/platform build.
+numpy>=1.26,<3
+pandas>=2.2,<3
+PyYAML>=6.0,<7
+scipy>=1.13,<2
+matplotlib>=3.9,<4
+seaborn>=0.13,<1
+psutil>=6,<8
+Pillow>=10.4,<13
+pytest>=8,<10

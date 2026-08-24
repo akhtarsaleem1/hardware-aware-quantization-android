@@ -1,0 +1,29 @@
+{
+  "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_ANALYSIS",
+  "failure_class": "ANDROID_INPUT_DISPATCH_ANR_FORCE_FINISH",
+  "protocol_version": "1.1.0",
+  "app_version": "1.1.0+2",
+  "device_id": "realme_RMX3760_api35",
+  "raw_csv": "benchmark/failed_runs/protocol_1_1_anr_20260822/benchmark_raw_partial.csv",
+  "raw_csv_sha256": "31a715c1690b89a295d5fa345f53fc6872e5842c16fcab1a291a4f81265efc77",
+  "data_rows_preserved": 3738,
+  "last_row": {
+    "timestamp_utc": "2026-08-22T11:10:50.303212Z",
+    "model_id": "mobilenet_v3_small_float32",
+    "runtime": "xnnpack_cpu",
+    "threads": 2,
+    "trial_id": 1,
+    "randomized_order_index": 40,
+    "run_index": 34,
+    "latency_ms": 306.176
+  },
+  "android_log_evidence": [
+    "2026-08-22 16:08:33.968 local: input dispatch timed out after 5000 ms; ANR stack collection began for PID 5900",
+    "2026-08-22 16:10:50.369 local: ActivityTaskManager force-finished MainActivity",
+    "2026-08-22 16:10:50.381 local: ActivityManager killed PID 5900 after user request following the error"
+  ],
+  "root_cause": "The synchronous LiteRT invocation loop occupied Flutter's UI isolate, preventing input-dispatch responsiveness during long configurations.",
+  "corrective_action": "Move the complete benchmark worker to a background Dart isolate, keep platform telemetry asynchronous, bump protocol/app versions, rebuild and rerun the full randomized matrix from trial 1.",
+  "analysis_policy": "This partial run is provenance-only and must never be pooled, resumed, imputed, or used for selection.",
+  "test_split_accessed": false
+}

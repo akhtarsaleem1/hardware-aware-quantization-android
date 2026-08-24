@@ -1,0 +1,2 @@
+filename_a,filename_b,decision,review_method,dhash_distance,pixel_mae_0_255,pixel_rmse_0_255,pixel_correlation,time_separation,notes
+20180105-093732-2.jpg,20180105-095900-2.jpg,distinct_scene,visual_pair_review_and_pixel_statistics,2,43.024,55.584,0.36931,00:21:28,"Different central plant structure and ground layout; low-frequency dHash collision, not a duplicate scene"

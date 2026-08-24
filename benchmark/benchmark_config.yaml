@@ -1,0 +1,65 @@
+protocol_version: 1.2.0
+status: frozen_before_final_device_run
+build_mode: release
+device_id: realme_RMX3760_api35
+models: [mobilenet_v2, mobilenet_v3_small, efficientnet_b0]
+quantization: [float32, float16, dynamic_int8, full_int8]
+runtimes: [builtin_cpu, xnnpack_cpu]
+threads: [1, 2, 4]
+warmup_runs: 20
+measured_runs: 100
+complete_trials: 3
+randomize_configuration_order: true
+random_seed: 42
+store_raw_per_inference: true
+timed_region: interpreter_run_only
+input_policy: deterministic_preallocated_synthetic_tensor
+accuracy_source: frozen_dataset_evaluation_not_benchmark_input
+percentiles: [50, 90, 95, 99]
+required_context:
+  - timestamp_utc
+  - device_id
+  - app_version
+  - model_sha256
+  - architecture
+  - quantization
+  - runtime
+  - requested_delegate
+  - effective_delegate
+  - delegate_error
+  - threads
+  - trial_id
+  - randomized_order_index
+  - run_index
+  - process_pss_mb
+  - process_rss_mb
+  - battery_percent
+  - charging_state
+  - battery_saver
+  - thermal_status
+  - battery_temperature_c
+conditions:
+  power_connection: usb_charging_recorded_not_controlled
+  battery_saver: false_required
+  screen_policy: FLAG_KEEP_SCREEN_ON
+  background_load_policy: no_load_injected_background_apps_unverified
+  final_start_rule: thermal_status_0_and_battery_temperature_at_or_below_35C_when_practical
+error_policy:
+  preserve_configuration_error_row: true
+  do_not_impute_latency: true
+  do_not_replace_requested_delegate_with_fallback: true
+  unsupported_configuration_is_a_result: true
+runtime_scope:
+  nnapi: excluded
+  nnapi_reason: Android_15_deprecated_and_effective_execution_not_verifiable_in_app
+  xnnpack: explicit_delegate_null_options_constructor
+  xnnpack_note: custom_Dart_options_path_crashed_in_LiteRT_1_4_0_and_is_excluded
+measurement_definitions:
+  process_pss_mb: Android_Debug_MemoryInfo_totalPss_divided_by_1024
+  process_rss_mb: Linux_proc_self_status_VmRSS_kB_divided_by_1024
+  xnnpack_effective_label: xnnpack_initialized_partition_unverified
+  version_change_from_pilot: protocol_1_1_corrects_RSS_semantics_and_delegate_label; protocol_1_2_moves_LiteRT_work_to_background_isolate_after_excluded_ANR_run
+selection:
+  validation_and_device_configuration_evidence_only: true
+  test_set_tuning_prohibited: true
+  method: pareto_front_with_median_and_p95_sensitivity

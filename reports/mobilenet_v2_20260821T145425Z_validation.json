@@ -1,0 +1,29 @@
+{
+  "status": "VALIDATION_ONLY",
+  "model": "models/saved/mobilenet_v2/20260821T145425Z.keras",
+  "split": "validation",
+  "dataset_protocol": "grouped_capture_session_v1_gap90_seed42",
+  "output_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+  "gpu_report": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.13.15",
+    "tensorflow": "2.21.0",
+    "physical_gpus": [
+      {
+        "name": "/physical_device:GPU:0",
+        "device_type": "GPU",
+        "compute_capability": [
+          7,
+          5
+        ],
+        "device_name": "NVIDIA GeForce GTX 1650"
+      }
+    ],
+    "nvidia_smi": "NVIDIA GeForce GTX 1650, 4096 MiB, 610.88",
+    "policy": "GPU_REQUIRED_ABORT_ON_CPU_FALLBACK"
+  },
+  "metrics": {
+    "accuracy": 0.8406624794006348,
+    "loss": 0.642511248588562
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_ANALYSIS",
+  "protocol_version": "1.2.0",
+  "app_version": "1.2.0+3",
+  "device_id": "realme_RMX3760_api35",
+  "raw_partial_csv": "benchmark/failed_runs/protocol_1_2_watermark_pressure_20260822/benchmark_raw_partial.csv",
+  "raw_partial_sha256": "0ce3b83e465d44f83678804bfe815d56e0eb226175f4a8ca28bf1d20f212cee1",
+  "raw_partial_bytes": 1631174,
+  "data_rows": 3865,
+  "first_timestamp_utc": "2026-08-22T11:33:27.515343Z",
+  "last_timestamp_utc": "2026-08-22T12:06:24.300153Z",
+  "last_complete_row": {
+    "model_id": "efficientnet_b0_dynamic_int8",
+    "runtime": "builtin_cpu",
+    "threads": 1,
+    "trial_id": 1,
+    "randomized_order_index": 41,
+    "run_index": 61
+  },
+  "completion_status_file_present": false,
+  "failure_classification": "ANDROID_PROCESS_KILLED_AFTER_ACTIVITY_LEFT_FOREGROUND",
+  "android_event_evidence": {
+    "activity_lost_top_resumed_local": "2026-08-22T17:06:24.300+05:00",
+    "benchmark_pid": 25813,
+    "kill_local": "2026-08-22T17:06:25.422+05:00",
+    "event": "am_kill",
+    "oom_adjustment": 700,
+    "reason": "Watermark Pressure",
+    "reported_memory_kib": 483776,
+    "replacement_pid": 4709,
+    "replacement_process_started_local": "2026-08-22T17:06:39.614+05:00"
+  },
+  "analysis_policy": "Never pool, resume, impute, or analyze this partial run. Restart the complete randomized matrix in a new raw file.",
+  "test_split_accessed": false
+}

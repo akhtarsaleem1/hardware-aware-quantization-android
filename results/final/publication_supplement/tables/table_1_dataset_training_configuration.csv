@@ -1,0 +1,22 @@
+category,item,value
+dataset,name,DeepWeeds
+dataset,license,CC BY 4.0
+dataset,records,17509
+dataset,train_images,10506
+dataset,validation_images,3502
+dataset,test_images,3501
+dataset,split_protocol,grouped_capture_session_v1_gap90_seed42
+dataset,input_size,224x224
+training,random_seed,42
+training,framework,tensorflow_2.21_wsl2_gpu
+training,batch_size,8
+training,maximum_epochs,30
+training,frozen_backbone_epochs,5
+training,optimizer,adam
+training,initial_learning_rate,0.001
+training,fine_tuning_learning_rate,1e-05
+training,class_weighting,balanced_training_only
+quantization,variants,float32;float16;dynamic_int8;full_int8
+quantization,representative_source,training_split_only
+benchmark,matrix,12 models x 2 runtimes x 3 thread counts
+benchmark,trials_warmups_measured,3 x (20 warmups + 100 measured)

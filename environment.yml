@@ -1,0 +1,16 @@
+name: hardware-aware-quantization
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - pandas>=2.2
+  - pyyaml>=6.0
+  - scipy>=1.13
+  - matplotlib>=3.9
+  - seaborn>=0.13
+  - psutil>=6
+  - pytest>=8
+  - pip
+  # Add a platform-compatible TensorFlow package after verification.
+

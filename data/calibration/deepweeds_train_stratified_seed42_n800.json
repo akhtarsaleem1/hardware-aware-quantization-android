@@ -1,0 +1,32 @@
+{
+  "status": "CALIBRATION_ONLY_NOT_EVALUATION",
+  "source_manifest": "data/manifests_grouped/train.csv",
+  "source_split": "train",
+  "selection": "deterministic_equal_per_class_without_replacement",
+  "seed": 42,
+  "sample_count": 800,
+  "class_counts": {
+    "0": 89,
+    "1": 89,
+    "2": 89,
+    "3": 89,
+    "4": 89,
+    "5": 89,
+    "6": 89,
+    "7": 89,
+    "8": 88
+  },
+  "input_shape": [
+    800,
+    224,
+    224,
+    3
+  ],
+  "input_dtype": "float32",
+  "input_range": [
+    0.0,
+    255.0
+  ],
+  "npz_path": "data/calibration/deepweeds_train_stratified_seed42_n800.npz",
+  "npz_sha256": "a25ec305b1e86151794e9fd268fedc1e40feea23643d42e95286ce219d36788c"
+}

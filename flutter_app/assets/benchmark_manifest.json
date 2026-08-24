@@ -1,0 +1,127 @@
+{
+  "protocol_version": "1.2.0",
+  "status": "FROZEN_FINAL_DEVICE_BENCHMARK",
+  "warmup_runs": 20,
+  "measured_runs": 100,
+  "complete_trials": 3,
+  "random_seed": 42,
+  "threads": [
+    1,
+    2,
+    4
+  ],
+  "runtimes": [
+    "builtin_cpu",
+    "xnnpack_cpu"
+  ],
+  "models": [
+    {
+      "id": "efficientnet_b0_float32",
+      "asset": "assets/models/efficientnet_b0_float32.tflite",
+      "sha256": "4e7bf575be33b6f10e45f58a6f5b2aa4ac03b48b6e5b563369fa98b03d95d03a",
+      "architecture": "efficientnet_b0",
+      "quantization": "float32",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "efficientnet_b0_float16",
+      "asset": "assets/models/efficientnet_b0_float16.tflite",
+      "sha256": "8b487a2559093bb4a7f986aa93665bf5c61d27c44c836376ec46bebc84d1bc8c",
+      "architecture": "efficientnet_b0",
+      "quantization": "float16",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "efficientnet_b0_dynamic_int8",
+      "asset": "assets/models/efficientnet_b0_dynamic_int8.tflite",
+      "sha256": "9d69d6ea033bbb5181ebf3fb5abb873a8c4407262e32f3bf25bf6bbe411052c9",
+      "architecture": "efficientnet_b0",
+      "quantization": "dynamic_int8",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "efficientnet_b0_full_int8",
+      "asset": "assets/models/efficientnet_b0_full_int8.tflite",
+      "sha256": "bf768dda79fe589885aa9c79820a478236c331901a921dec3f8de87c8219a214",
+      "architecture": "efficientnet_b0",
+      "quantization": "full_int8",
+      "input_dtype": "int8",
+      "output_dtype": "int8"
+    },
+    {
+      "id": "mobilenet_v2_float32",
+      "asset": "assets/models/mobilenet_v2_float32.tflite",
+      "sha256": "bec15e3963d46e241acd9c906831107e97b4c00b81c895257a4321545dcd738d",
+      "architecture": "mobilenet_v2",
+      "quantization": "float32",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "mobilenet_v2_float16",
+      "asset": "assets/models/mobilenet_v2_float16.tflite",
+      "sha256": "801130c48bc49023dd5481bab243c5909309bb5630b0b1d4594ca5ef1ab954dd",
+      "architecture": "mobilenet_v2",
+      "quantization": "float16",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "mobilenet_v2_dynamic_int8",
+      "asset": "assets/models/mobilenet_v2_dynamic_int8.tflite",
+      "sha256": "97e33bb8b77f611d54bdce32a39c325b54b8d1d0b5a6d401adea5c5bbb182b8f",
+      "architecture": "mobilenet_v2",
+      "quantization": "dynamic_int8",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "mobilenet_v2_full_int8",
+      "asset": "assets/models/mobilenet_v2_full_int8.tflite",
+      "sha256": "0b1cdd47d0b7d94504c62d7160b431a69814006e3132b126ddc5b5bc97a4246d",
+      "architecture": "mobilenet_v2",
+      "quantization": "full_int8",
+      "input_dtype": "int8",
+      "output_dtype": "int8"
+    },
+    {
+      "id": "mobilenet_v3_small_float32",
+      "asset": "assets/models/mobilenet_v3_small_float32.tflite",
+      "sha256": "cf6183dcd31c9ec34724e8f68d15423dc09b0cf71b1e91ba37800321b7526ba4",
+      "architecture": "mobilenet_v3_small",
+      "quantization": "float32",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "mobilenet_v3_small_float16",
+      "asset": "assets/models/mobilenet_v3_small_float16.tflite",
+      "sha256": "201167c633c4c8714d7c84905e88fe159d76e9eff38c91b70708b1ced5a8bb00",
+      "architecture": "mobilenet_v3_small",
+      "quantization": "float16",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "mobilenet_v3_small_dynamic_int8",
+      "asset": "assets/models/mobilenet_v3_small_dynamic_int8.tflite",
+      "sha256": "1c3ca9e08ab14de0d8e7ca58f127b9955ae2cf3e9ffaad5033952bcbb51dd82f",
+      "architecture": "mobilenet_v3_small",
+      "quantization": "dynamic_int8",
+      "input_dtype": "float32",
+      "output_dtype": "float32"
+    },
+    {
+      "id": "mobilenet_v3_small_full_int8",
+      "asset": "assets/models/mobilenet_v3_small_full_int8.tflite",
+      "sha256": "7eb4e5feb3ad6a7ffe9c7d81f9f7b78d520a334323c091aaddccb8859c84991b",
+      "architecture": "mobilenet_v3_small",
+      "quantization": "full_int8",
+      "input_dtype": "int8",
+      "output_dtype": "int8"
+    }
+  ]
+}

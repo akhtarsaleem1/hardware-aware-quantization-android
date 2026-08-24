@@ -1,0 +1,2 @@
+filename_a,split_a,filename_b,split_b,dhash_distance
+20180105-093732-2.jpg,train,20180105-095900-2.jpg,validation,2

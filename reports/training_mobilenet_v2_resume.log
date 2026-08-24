@@ -1,0 +1,36 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787385181.806800     428 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1787385182.556336     428 cpu_feature_guard.cc:227] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1787385189.783422     428 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+I0000 00:00:1787385207.322663     428 gpu_device.cc:2043] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2244 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1650, pci bus id: 0000:01:00.0, compute capability: 7.5
+I0000 00:00:1787385230.919646     428 cuda_dnn.cc:461] Loaded cuDNN version 92400
+/home/ask/venvs/hardware-aware-quantization/lib/python3.13/site-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a tf.data.Dataset. The Dataset is expected to already be shuffled (via `.shuffle(buffer_size)`).
+  self.data_adapter = data_adapters.get_data_adapter(
+Epoch 18/30
+1314/1314 - 268s - 204ms/step - accuracy: 0.9434 - loss: 0.0912 - val_accuracy: 0.7459 - val_loss: 0.8845 - learning_rate: 1.0000e-05
+Epoch 19/30
+1314/1314 - 118s - 90ms/step - accuracy: 0.9526 - loss: 0.0752 - val_accuracy: 0.7730 - val_loss: 0.8729 - learning_rate: 1.0000e-05
+Epoch 20/30
+1314/1314 - 149s - 113ms/step - accuracy: 0.9534 - loss: 0.0690 - val_accuracy: 0.7747 - val_loss: 0.8163 - learning_rate: 1.0000e-05
+Epoch 21/30
+1314/1314 - 173s - 132ms/step - accuracy: 0.9588 - loss: 0.0652 - val_accuracy: 0.7816 - val_loss: 0.8314 - learning_rate: 1.0000e-05
+Epoch 22/30
+1314/1314 - 279s - 213ms/step - accuracy: 0.9610 - loss: 0.0613 - val_accuracy: 0.7850 - val_loss: 0.7692 - learning_rate: 1.0000e-05
+Epoch 23/30
+1314/1314 - 342s - 260ms/step - accuracy: 0.9729 - loss: 0.0481 - val_accuracy: 0.7850 - val_loss: 0.8085 - learning_rate: 1.0000e-05
+Epoch 24/30
+1314/1314 - 198s - 150ms/step - accuracy: 0.9705 - loss: 0.0529 - val_accuracy: 0.8110 - val_loss: 0.7152 - learning_rate: 1.0000e-05
+Epoch 25/30
+1314/1314 - 129s - 98ms/step - accuracy: 0.9815 - loss: 0.0282 - val_accuracy: 0.7913 - val_loss: 0.8766 - learning_rate: 1.0000e-05
+Epoch 26/30
+1314/1314 - 132s - 100ms/step - accuracy: 0.9822 - loss: 0.0290 - val_accuracy: 0.8172 - val_loss: 0.7719 - learning_rate: 1.0000e-05
+Epoch 27/30
+1314/1314 - 133s - 101ms/step - accuracy: 0.9941 - loss: 0.0083 - val_accuracy: 0.8172 - val_loss: 0.7944 - learning_rate: 5.0000e-06
+Epoch 28/30
+1314/1314 - 125s - 95ms/step - accuracy: 0.9931 - loss: 0.0109 - val_accuracy: 0.8407 - val_loss: 0.6425 - learning_rate: 5.0000e-06
+Epoch 29/30
+1314/1314 - 130s - 99ms/step - accuracy: 0.9957 - loss: 0.0070 - val_accuracy: 0.7950 - val_loss: 0.8775 - learning_rate: 5.0000e-06
+Epoch 30/30
+1314/1314 - 142s - 108ms/step - accuracy: 0.9938 - loss: 0.0089 - val_accuracy: 0.8378 - val_loss: 0.6862 - learning_rate: 5.0000e-06

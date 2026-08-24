@@ -1,0 +1,26 @@
+{
+  "status": "RUNNING",
+  "protocol_version": "1.1.0",
+  "raw_device_path": "/storage/emulated/0/Android/data/com.example.quant_repeatability_benchmark/files/benchmark_raw_2026-08-22T10-42-40.909417Z.csv",
+  "start_utc": "2026-08-22T10:42:40.909417Z",
+  "device_id": "realme_RMX3760_api35",
+  "adb_serial": "0H73C15I22100932",
+  "app_version": "1.1.0+2",
+  "apk_sha256": "21141ab20e635ab11dee5eabdb7a94c07032f1dd6b6f88590c0cab398faf8f42",
+  "benchmark_manifest_sha256": "51ebdc885157eb1aad3702b7b58baaf74d351827024508af4a06d5f772661ef6",
+  "power": {
+    "usb_powered": true,
+    "charging_status_code": 2,
+    "battery_percent": 74,
+    "battery_temperature_c": 38.9,
+    "battery_saver": false
+  },
+  "thermal": {
+    "android_thermal_status": 0,
+    "soc_temperature_c_observed_range_at_preflight": [53.0, 57.751],
+    "gpu_temperature_c_observed_range_at_preflight": [49.0, 50.362]
+  },
+  "preferred_start_rule_met": false,
+  "preferred_start_rule_note": "Battery temperature did not reach <=35 C while USB ADB power remained connected; actual state is recorded and no cold-start claim is made.",
+  "preexisting_raw_files_preserved": 3
+}

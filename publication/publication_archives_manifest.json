@@ -1,0 +1,1603 @@
+{
+  "status": "PUBLICATION_ARCHIVES_COMPLETE",
+  "created_utc": "2026-08-24T13:53:09.645006+00:00",
+  "readiness_status": "READY_FOR_AUTHOR_SUBMISSION_REVIEW",
+  "source_images_included": false,
+  "redundant_training_checkpoints_included": false,
+  "journal_archive": {
+    "path": "publication/journal_submission_ready_for_review.zip",
+    "sha256": "5733429b86a6deaf4a9dd1cc33627ba150529271052b0c5ae0ceae733c3d8229",
+    "bytes": 6203352,
+    "file_count": 47,
+    "files": [
+      {
+        "path": "paper/code_availability.md",
+        "sha256": "08410f809bc521787f34c3466710c1903a356562e415616145c9a677952c4867",
+        "bytes": 657
+      },
+      {
+        "path": "paper/cover_letter_draft.md",
+        "sha256": "9d8d9a0139dcbaf884cfc3375e9dbda0de54f058d0fa8859eaff16d210f4a8c1",
+        "bytes": 2594
+      },
+      {
+        "path": "paper/data_availability.md",
+        "sha256": "45b1f32f7897534e606c7109b78a5c455fd0719395f2edccac25a487d4234c06",
+        "bytes": 788
+      },
+      {
+        "path": "paper/highlights.md",
+        "sha256": "858920ee3ebe348a58e85501c453fef780889e58977863e2564eac02a43d355d",
+        "bytes": 336
+      },
+      {
+        "path": "paper/journal_target_version.md",
+        "sha256": "38053aac8cddbd98cff1ad4cc2c24cc84ce35b588e1ce290a98c1ab02a1aebdc",
+        "bytes": 970
+      },
+      {
+        "path": "paper/manuscript_main.docx",
+        "sha256": "485c39a9881bf724cff9bd0127a175423b14dcc22ade5770bac61ee574e47dc1",
+        "bytes": 1670270
+      },
+      {
+        "path": "paper/manuscript_main.md",
+        "sha256": "5ed0ea626876ab101353a4856f5f76c9909048cad77a78cca65b22f4bb05eeef",
+        "bytes": 31728
+      },
+      {
+        "path": "paper/manuscript_main.pdf",
+        "sha256": "6b99e420148975903578b2fe132207e8daa76236934edd2c543f71869b09d0d0",
+        "bytes": 823659
+      },
+      {
+        "path": "paper/references.bib",
+        "sha256": "c0db53b7064c0d432d138c64bbecae9d2392fdcb48af5e911846a94abcf1d912",
+        "bytes": 12887
+      },
+      {
+        "path": "paper/reproducibility_statement.md",
+        "sha256": "3aba98c3d6fc94daabb3199873c68877b1d28f6602706b88104de0d570055515",
+        "bytes": 1739
+      },
+      {
+        "path": "reports/publication_readiness.json",
+        "sha256": "176a8f17da70f9c3a631f55e9c97acbc85287b8b39eec62edd1daac47fb889c1",
+        "bytes": 462
+      },
+      {
+        "path": "research_integrity/report.md",
+        "sha256": "4768804455947c0ae578da06ff596e335d2f61226a12542ff3b5d46df645bfdc",
+        "bytes": 4198
+      },
+      {
+        "path": "research_integrity/result_provenance.csv",
+        "sha256": "29962e4e6dfddf48ab038e0255bd4d48eecd745d38159d2e8414a90f744e88fe",
+        "bytes": 41145
+      },
+      {
+        "path": "results/final/figures/figure_1_accuracy_size.pdf",
+        "sha256": "b2e6f3d5e2e3dcf31ff8207fcf22587906e18ddfa67292834303de9aa3dc337b",
+        "bytes": 19338
+      },
+      {
+        "path": "results/final/figures/figure_1_accuracy_size.png",
+        "sha256": "c0f1a5ab002750aa10fc9e301b3fe0d8a87d0e77b7a2798bae5ee328d525ff23",
+        "bytes": 240017
+      },
+      {
+        "path": "results/final/figures/figure_2_latency.pdf",
+        "sha256": "c36c7f853b56baa84532f3f7d3444eea45b990cc647fcb22cfc12f9157cedaae",
+        "bytes": 20366
+      },
+      {
+        "path": "results/final/figures/figure_2_latency.png",
+        "sha256": "255802c87bebf97ecae59f343d4bc554829b842306e0fd43de77c76836265f9b",
+        "bytes": 485054
+      },
+      {
+        "path": "results/final/figures/figure_3_latency.pdf",
+        "sha256": "8c7cab963fc5869fbb03ef482522381c380f6368503650249a42ae75c48b95d2",
+        "bytes": 21175
+      },
+      {
+        "path": "results/final/figures/figure_3_latency.png",
+        "sha256": "fc457873739ddcde5911edd09a2fd46d4595abff133b51dac0421b54bb384d3a",
+        "bytes": 490821
+      },
+      {
+        "path": "results/final/figures/figure_4_pareto.pdf",
+        "sha256": "fcfbbb2460c69dc2e80338b84cad2b3812127f660fc43270dbe243333c886175",
+        "bytes": 23995
+      },
+      {
+        "path": "results/final/figures/figure_4_pareto.png",
+        "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+        "bytes": 400770
+      },
+      {
+        "path": "results/final/figures/figure_5_rank_stability.pdf",
+        "sha256": "840e68b02fae474ec5e4cbf22f0be494aa705dc60a97868873e05901956581a1",
+        "bytes": 16847
+      },
+      {
+        "path": "results/final/figures/figure_5_rank_stability.png",
+        "sha256": "35afd55a6d3ee4d270cbfd7e4498f14137166666293c81858a1886fb10732361",
+        "bytes": 450148
+      },
+      {
+        "path": "results/final/publication_supplement/figures/accuracy_latency_tradeoff.pdf",
+        "sha256": "2230e8a8b7f65a65f26cf0e32c45dc189c61e483dea97dfff730cd53208f7678",
+        "bytes": 23995
+      },
+      {
+        "path": "results/final/publication_supplement/figures/accuracy_latency_tradeoff.png",
+        "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+        "bytes": 400770
+      },
+      {
+        "path": "results/final/publication_supplement/figures/benchmark_distribution.pdf",
+        "sha256": "4f570821df614c7089c001f99f2f79dd4ea3ac74fae3ebcb22f9a69ab8fdde26",
+        "bytes": 49088
+      },
+      {
+        "path": "results/final/publication_supplement/figures/benchmark_distribution.png",
+        "sha256": "f301d510e5cf0bdf4ad785800cc0584b984142d393d82a62dd645e4a8d78d276",
+        "bytes": 618753
+      },
+      {
+        "path": "results/final/publication_supplement/figures/latency_comparison.pdf",
+        "sha256": "371d7403b71fc38d9bde76192b5e08d168a78abf1f1735497ef8f0cf3af34ee1",
+        "bytes": 17251
+      },
+      {
+        "path": "results/final/publication_supplement/figures/latency_comparison.png",
+        "sha256": "c0c223c246321f2c3a3bcd341ad04b0c8222060974f63dcb17557df240c963ee",
+        "bytes": 542466
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_architecture.pdf",
+        "sha256": "1d7e11dea19de2b35165e96003038f998c1d3e179a65b7c1415363edf10d0bff",
+        "bytes": 13586
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_architecture.png",
+        "sha256": "33feaa2018afafba34abb0bf18e9d32d5d74ae89a534e4c934dfc351665ff15c",
+        "bytes": 190903
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_size_comparison.pdf",
+        "sha256": "b1474449fab6607f6e83a9663a206e446a4750786a0bbce68c23a542fefb06b3",
+        "bytes": 16624
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_size_comparison.png",
+        "sha256": "9b7f4c6611922a74a3d29549c93c25a1daacd386025668ce2116fbed549c4090",
+        "bytes": 205704
+      },
+      {
+        "path": "results/final/publication_supplement/figures/pareto_front.pdf",
+        "sha256": "2230e8a8b7f65a65f26cf0e32c45dc189c61e483dea97dfff730cd53208f7678",
+        "bytes": 23995
+      },
+      {
+        "path": "results/final/publication_supplement/figures/pareto_front.png",
+        "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+        "bytes": 400770
+      },
+      {
+        "path": "results/final/publication_supplement/figures/runtime_comparison.pdf",
+        "sha256": "70728d04ee8479d9cda7bf574e7747e8db508b0b6a1aacfb096f2fcf881de73e",
+        "bytes": 15606
+      },
+      {
+        "path": "results/final/publication_supplement/figures/runtime_comparison.png",
+        "sha256": "88ddb283b4ea30cae1f25e72fa7efb3faca43e242ef96b181d52b0968c637ad3",
+        "bytes": 185535
+      },
+      {
+        "path": "results/final/publication_supplement/supplement_manifest.json",
+        "sha256": "9fb7a8aeabd9b5f0e631012383f7e82e1ad2bf700810b7d3f3f02038426ab226",
+        "bytes": 5299
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_1_dataset_training_configuration.csv",
+        "sha256": "a623f7f405b3d7627483dde00d514aba5d864962b7ccc77b741fdfe2b5e5fec8",
+        "bytes": 805
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_2_model_architecture_comparison.csv",
+        "sha256": "231a8484a3e82c20ae590f12b10b4636b3c143df6d0f2a141327c036f5ddb710",
+        "bytes": 612
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_3_accuracy_metrics.csv",
+        "sha256": "4410825ff29a5531cbabb71613eb2eb8b47a38d994bf3f6567fbb5e942ee86c7",
+        "bytes": 2553
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_4_quantization_model_sizes.csv",
+        "sha256": "6b9c9fb0dac87052e0cc5e99fef35a069b3a20d38e23004665b13a780ee29247",
+        "bytes": 1685
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_5_android_latency_statistics.csv",
+        "sha256": "e713a9ddeb9fb9dc86e9cf030b4ae27469a431bcb29b501b995e9471a2d8e08d",
+        "bytes": 16841
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_6_memory_measurements.csv",
+        "sha256": "5b5d0a18f3f5355eae92e8ff1f4e129657de722b2b3a47b19cccb2a8712a233a",
+        "bytes": 8527
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_7_runtime_delegate_comparison.csv",
+        "sha256": "23483e3a262027cbe36b11b39f09c928dd9e1ef569fd7f525fdd015260c92d70",
+        "bytes": 892
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_8_pareto_efficient_configurations.csv",
+        "sha256": "f741e5ab130582922976e93f9bdc9dbdbacf2f60bf4f5a2b998187493fdfe692",
+        "bytes": 1711
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_9_hardware_aware_recommendations.csv",
+        "sha256": "1294a722db8415527028721331618a2a9a8303ab27b969e48d77d50d0fecf8ac",
+        "bytes": 2827
+      }
+    ]
+  },
+  "reproducibility_archive": {
+    "path": "publication/reproducibility_artifact.zip",
+    "sha256": "cd063f5bdcf26d06eefbb70ec4256cb38a6527660b4d76696e1c8a49e1c64797",
+    "bytes": 150781207,
+    "file_count": 269,
+    "files": [
+      {
+        "path": "EXPERIMENT_PLAN.md",
+        "sha256": "0f79d2cce132fe2ac6a62863cdd1a1cd505c72a653c6ba9624461fb1bee4d765",
+        "bytes": 2897
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "e97cdbec3f51e86ac9c7fdfc44929695b68113ed708b948ab2b4a37c978d6aa6",
+        "bytes": 802
+      },
+      {
+        "path": "README.md",
+        "sha256": "713e2c70621026592a31a19a5c9ca6d1d7340f21876b5a16b51fafc66f9f7ffb",
+        "bytes": 3523
+      },
+      {
+        "path": "REPRODUCIBILITY.md",
+        "sha256": "bd951c417776e4eec0a01fc521951653d479035b06915ca2d0e4be8bf5ce7ed6",
+        "bytes": 2506
+      },
+      {
+        "path": "benchmark/benchmark_config.yaml",
+        "sha256": "a0a07accb892dff476afb2c967bbe3121c0630a232607379c0bcf1eadfb1f40b",
+        "bytes": 2297
+      },
+      {
+        "path": "benchmark/device_profile.json",
+        "sha256": "dfe43354b02f10fdec65100b434c805381dff27ddba386d2f1dfdbb8534f7bc1",
+        "bytes": 1668
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_1_anr_20260822/benchmark_raw_partial.csv",
+        "sha256": "31a715c1690b89a295d5fa345f53fc6872e5842c16fcab1a291a4f81265efc77",
+        "bytes": 1577124
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_1_anr_20260822/failure_report.json",
+        "sha256": "25d57225e46fc2f4b3e852ca3ea56f17a9a70b22d657c093bd92081103eda23f",
+        "bytes": 1573
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_1_anr_20260822/start.json",
+        "sha256": "71cc80fbf7e269dfc18c8034947672d3a6ad8c7c10a85b69dad7e58562eb80b5",
+        "bytes": 1143
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_final_candidate_incomplete_20260822/benchmark_raw_partial.csv",
+        "sha256": "c6b00ae233fa5c191378cb151779d479032d7dead806e07e721a60d19081f85d",
+        "bytes": 7198292
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_final_candidate_incomplete_20260822/failure_report.json",
+        "sha256": "a4410de7802e50f4d4006857a9c4429594a7a1e7c7125aef7e5ff27f3ebee212",
+        "bytes": 669
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_foreground_loss_20260822/benchmark_raw_partial.csv",
+        "sha256": "75381e5341539ede845210def57208b7184e33fe0dd6dc38b2a2943bc9e685a9",
+        "bytes": 788393
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_foreground_loss_20260822/failure_report.json",
+        "sha256": "32fc0c64ca8fb6d1435f4178ca9412ac9c55b6a7998cce1acdb940fbcf79d39e",
+        "bytes": 1238
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_foreground_loss_20260822/start.json",
+        "sha256": "638d71ee55de3dff46ef35b2d0f65d23ef4f854e3a58be9f7d23be3d81d9b1a2",
+        "bytes": 1971
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_watermark_pressure_20260822/benchmark_raw_partial.csv",
+        "sha256": "0ce3b83e465d44f83678804bfe815d56e0eb226175f4a8ca28bf1d20f212cee1",
+        "bytes": 1631174
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_watermark_pressure_20260822/failure_report.json",
+        "sha256": "8fbc3d9dd076cba201fab1deb0da89bb2d46aa3ee4165f01bc0f4e98a0245556",
+        "bytes": 1434
+      },
+      {
+        "path": "benchmark/failed_runs/protocol_1_2_watermark_pressure_20260822/start.json",
+        "sha256": "c3ea041e26a5e0e794d937e198bfcd50cce980c28fbdc2983fae938689a9ce54",
+        "bytes": 1551
+      },
+      {
+        "path": "benchmark/final_benchmark_start.json",
+        "sha256": "2cbf27b238a5cd0e5e3ffc747bc06a7a0933bb95dd86520ca28b62db3f38908c",
+        "bytes": 2350
+      },
+      {
+        "path": "benchmark/pilot/mobilenet_v3_device_stability_pilot_partial.csv",
+        "sha256": "e12e88427783a3fbadc1159904e95725ed8469f2f7ffbd305d57f9666640b31e",
+        "bytes": 666189
+      },
+      {
+        "path": "benchmark/pilot/mobilenet_v3_device_stability_pilot_partial_summary.csv",
+        "sha256": "eadefbde4f536cc62de43773791d2b7eb3c7e1ade359da53046896b570961d31",
+        "bytes": 6653
+      },
+      {
+        "path": "benchmark/processed/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "benchmark/raw/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "benchmark/raw/final_realme_RMX3760_protocol1_2_bounded_status.json",
+        "sha256": "9127082e3602341ce43430e6ad3de707b190e0a8fb36b610780bf1e9006e3210",
+        "bytes": 764
+      },
+      {
+        "path": "benchmark/raw/final_realme_RMX3760_protocol1_2_bounded_trials_1_2.csv",
+        "sha256": "5c129b5d6adfa10e3db3f4f66e118665470e89ceffd780d414dcc06483dd762b",
+        "bytes": 5785224
+      },
+      {
+        "path": "benchmark/raw_schema.csv",
+        "sha256": "0f336a2ab2db4b3a1c45aba5cd3352bb0bdae64ac6f44a3cf4a78d33f77e3509",
+        "bytes": 483
+      },
+      {
+        "path": "config.yaml",
+        "sha256": "792e41445a412f3abb2c47e8ee7b99cee5a10c1aff5f21ba41c4223aa1233dd2",
+        "bytes": 1972
+      },
+      {
+        "path": "data/manifests_grouped/manifest_metadata.json",
+        "sha256": "771d7ac830191919051c2f80fde0737838bc16341261376a438c1be8bb825147",
+        "bytes": 1334
+      },
+      {
+        "path": "data/manifests_grouped/test.csv",
+        "sha256": "567b554aac8cfe669a00451c121420b10f751e072c0c74ca2213ab31ed9dae86",
+        "bytes": 529438
+      },
+      {
+        "path": "data/manifests_grouped/train.csv",
+        "sha256": "a4dde73fa55605b36be21dd93abd2dd44d75c4b4d6413fd57eebbc6cc3596ab5",
+        "bytes": 1599136
+      },
+      {
+        "path": "data/manifests_grouped/validation.csv",
+        "sha256": "a7f732703fc69059c1678953dde46b608ff8cb91c136832137ddaedc39c76e2b",
+        "bytes": 550600
+      },
+      {
+        "path": "environment.yml",
+        "sha256": "eaf8c5bdd3e25712d420446c063c6f8bd9506ef59b320abfccd0c8ae9d34f380",
+        "bytes": 298
+      },
+      {
+        "path": "environment/compute_policy.md",
+        "sha256": "63cc10bf47748d7c309bbdf8ac2722d65f1bd62379283ea09038f27123103f85",
+        "bytes": 2146
+      },
+      {
+        "path": "environment/environment_report.md",
+        "sha256": "a0deabc95b91092e8d5382dcf8cb8797e1d25549f4686aa84583f9470f792eba",
+        "bytes": 2189
+      },
+      {
+        "path": "environment/final_gpu_preflight_20260822.json",
+        "sha256": "08e5d6bfdb2a6174b6cc5bd45781662d6567707b2cc719fc86ffc606fcdb8462",
+        "bytes": 553
+      },
+      {
+        "path": "environment/model_feasibility_gpu_report.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "environment/system_info.json",
+        "sha256": "91e3bc588b52e8575b73b0a19991c1731bbc79d5e7016bae854b1c5375e95d6b",
+        "bytes": 2854
+      },
+      {
+        "path": "environment/training_gpu_report_20260821T132810Z.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "environment/training_gpu_report_20260821T132810Z_resume.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "environment/training_gpu_report_20260821T145425Z.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "environment/training_gpu_report_20260821T145425Z_resume.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "environment/training_gpu_report_20260822T085034Z.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "environment/wsl_gpu_smoke.json",
+        "sha256": "64f40bac756e63e937a4c0e49c9d8c72a0c64daf02cab39a1ef6fec6f59424a4",
+        "bytes": 553
+      },
+      {
+        "path": "flutter_app/android/.gitignore",
+        "sha256": "c9af75dbc2c8aa867476a09426c80b178c4aeed8b9393ae48503eedfa3273d71",
+        "bytes": 267
+      },
+      {
+        "path": "flutter_app/android/.kotlin/errors/errors-1787386854576.log",
+        "sha256": "bd42b5875dd35ea22176eb9a5b85c60493c91f955a4bb92b199572cc53a5e6ea",
+        "bytes": 64
+      },
+      {
+        "path": "flutter_app/android/app/build.gradle.kts",
+        "sha256": "6dd0be8a03a8bfb5534a2184f851637f851c3ef584f8aff8b8fef66930599816",
+        "bytes": 1077
+      },
+      {
+        "path": "flutter_app/android/app/src/debug/AndroidManifest.xml",
+        "sha256": "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c",
+        "bytes": 385
+      },
+      {
+        "path": "flutter_app/android/app/src/main/AndroidManifest.xml",
+        "sha256": "74de67c521b21e4cc3b88d461e354ef0f650d8f26e973dede4684f563dbdffd9",
+        "bytes": 1655
+      },
+      {
+        "path": "flutter_app/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java",
+        "sha256": "1eee38eda603b4b4e4afe2a2380cdfed27e590084c3798114927a1c40355f387",
+        "bytes": 1110
+      },
+      {
+        "path": "flutter_app/android/app/src/main/kotlin/com/example/quant_repeatability_benchmark/MainActivity.kt",
+        "sha256": "aa9eca377196ae971b9999eb3a6e2e2d4c31ea9f2b5bac5a28d07c1ab3004f27",
+        "bytes": 3265
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/drawable-v21/launch_background.xml",
+        "sha256": "dca312ec77de83e43ef70a825c299b51451247286c29167d62f19165750b8793",
+        "bytes": 450
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/drawable/launch_background.xml",
+        "sha256": "2df60e2cfbee873ce2858088cf003e6b93498f2f568476da437610467ea1a9d7",
+        "bytes": 446
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+        "sha256": "6a7c8f0d703e3682108f9662f813302236240d3f8f638bb391e32bfb96055fef",
+        "bytes": 544
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+        "sha256": "c7c0c0189145e4e32a401c61c9bdc615754b0264e7afae24e834bb81049eaf81",
+        "bytes": 442
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+        "sha256": "e14aa40904929bf313fded22cf7e7ffcbf1d1aac4263b5ef1be8bfce650397aa",
+        "bytes": 721
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+        "sha256": "4d470bf22d5c17d84edc5f82516d1ba8a1c09559cd761cefb792f86d9f52b540",
+        "bytes": 1031
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+        "sha256": "3c34e1f298d0c9ea3455d46db6b7759c8211a49e9ec6e44b635fc5c87dfb4180",
+        "bytes": 1443
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/values-night/styles.xml",
+        "sha256": "ea763597dc1a84c8034251caee98d7753e0fbf57340ffc94677427de4b537516",
+        "bytes": 1013
+      },
+      {
+        "path": "flutter_app/android/app/src/main/res/values/styles.xml",
+        "sha256": "cca15a99b59380a548bf6a890f7ca5380ee509b1f9bbb2f5f9ec3589fa25c2f7",
+        "bytes": 1014
+      },
+      {
+        "path": "flutter_app/android/app/src/profile/AndroidManifest.xml",
+        "sha256": "b01a4541a8144c15bc617bab7eb267c99fa1476368fbbda5a12cdbf4e316a34c",
+        "bytes": 385
+      },
+      {
+        "path": "flutter_app/android/build.gradle.kts",
+        "sha256": "c397b6c68f8bd5110e076e9519269e0b41ccadb327aeaa19baba40f56655ef7c",
+        "bytes": 1146
+      },
+      {
+        "path": "flutter_app/android/gradle.properties",
+        "sha256": "76b6d0b2f2173af969dbe915e1f5f98a89529b35291063d92d3d8d5b91cf5135",
+        "bytes": 405
+      },
+      {
+        "path": "flutter_app/android/gradle/wrapper/gradle-wrapper.jar",
+        "sha256": "16caeaf66d57a0d1d2087fef6a97efa62de8da69afa5b908f40db35afc4342da",
+        "bytes": 53636
+      },
+      {
+        "path": "flutter_app/android/gradle/wrapper/gradle-wrapper.properties",
+        "sha256": "594a00250ef7a36609a01f3263bf5ed63963afaf9ca9f82f2cd1de0f6f056383",
+        "bytes": 207
+      },
+      {
+        "path": "flutter_app/android/gradlew",
+        "sha256": "ec56c02543666d92d9ac5ae7fcc48f88ce4de0deb8b7f9b39928ca46f68c1b2b",
+        "bytes": 4971
+      },
+      {
+        "path": "flutter_app/android/gradlew.bat",
+        "sha256": "c13c6e91b9a517783976de213d46398c661ea9e17651376d7301e839eaedcc62",
+        "bytes": 2404
+      },
+      {
+        "path": "flutter_app/android/local.properties",
+        "sha256": "14a90ab32ccd80ce2708840b7b3f3052be3cde1c73150a591f5e13b7b2e13097",
+        "bytes": 155
+      },
+      {
+        "path": "flutter_app/android/quant_repeatability_benchmark_android.iml",
+        "sha256": "c8e0091edeca4e766e9dcf948e59c86a0427381fb5e31768ae396eedde5f1dfc",
+        "bytes": 1630
+      },
+      {
+        "path": "flutter_app/android/settings.gradle.kts",
+        "sha256": "092ba880c8d4a07591aafc082f45deedc9afcf60c113a4bb3d13cbe1a1fce9de",
+        "bytes": 796
+      },
+      {
+        "path": "flutter_app/assets/benchmark_manifest.json",
+        "sha256": "5fb2fbc4ef3c507a92d2f029a411169d5f87a53cf016682c4f0762d16870c83a",
+        "bytes": 4501
+      },
+      {
+        "path": "flutter_app/assets/models/efficientnet_b0_dynamic_int8.tflite",
+        "sha256": "9d69d6ea033bbb5181ebf3fb5abb873a8c4407262e32f3bf25bf6bbe411052c9",
+        "bytes": 4592176
+      },
+      {
+        "path": "flutter_app/assets/models/efficientnet_b0_float16.tflite",
+        "sha256": "8b487a2559093bb4a7f986aa93665bf5c61d27c44c836376ec46bebc84d1bc8c",
+        "bytes": 8165448
+      },
+      {
+        "path": "flutter_app/assets/models/efficientnet_b0_float32.tflite",
+        "sha256": "4e7bf575be33b6f10e45f58a6f5b2aa4ac03b48b6e5b563369fa98b03d95d03a",
+        "bytes": 16115064
+      },
+      {
+        "path": "flutter_app/assets/models/efficientnet_b0_full_int8.tflite",
+        "sha256": "bf768dda79fe589885aa9c79820a478236c331901a921dec3f8de87c8219a214",
+        "bytes": 4953200
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v2_dynamic_int8.tflite",
+        "sha256": "97e33bb8b77f611d54bdce32a39c325b54b8d1d0b5a6d401adea5c5bbb182b8f",
+        "bytes": 2545400
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v2_float16.tflite",
+        "sha256": "801130c48bc49023dd5481bab243c5909309bb5630b0b1d4594ca5ef1ab954dd",
+        "bytes": 4537556
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v2_float32.tflite",
+        "sha256": "bec15e3963d46e241acd9c906831107e97b4c00b81c895257a4321545dcd738d",
+        "bytes": 8937820
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v2_full_int8.tflite",
+        "sha256": "0b1cdd47d0b7d94504c62d7160b431a69814006e3132b126ddc5b5bc97a4246d",
+        "bytes": 2748320
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v3_small_dynamic_int8.tflite",
+        "sha256": "1c3ca9e08ab14de0d8e7ca58f127b9955ae2cf3e9ffaad5033952bcbb51dd82f",
+        "bytes": 1144288
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v3_small_float16.tflite",
+        "sha256": "201167c633c4c8714d7c84905e88fe159d76e9eff38c91b70708b1ced5a8bb00",
+        "bytes": 1967356
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v3_small_float32.tflite",
+        "sha256": "cf6183dcd31c9ec34724e8f68d15423dc09b0cf71b1e91ba37800321b7526ba4",
+        "bytes": 3782516
+      },
+      {
+        "path": "flutter_app/assets/models/mobilenet_v3_small_full_int8.tflite",
+        "sha256": "7eb4e5feb3ad6a7ffe9c7d81f9f7b78d520a334323c091aaddccb8859c84991b",
+        "bytes": 1252008
+      },
+      {
+        "path": "flutter_app/build/app/outputs/flutter-apk/app-release.apk",
+        "sha256": "dd462d33fb0e175e51f0b16f07bad14c1092e20a2a5a9519914ef9b07f3baf1b",
+        "bytes": 132873947
+      },
+      {
+        "path": "flutter_app/lib/benchmark_runner.dart",
+        "sha256": "85d308d1556107fdf4f92b53d62ca33cdc3a4b93be70025f67bc05269fd81ddf",
+        "bytes": 13123
+      },
+      {
+        "path": "flutter_app/lib/inference_demo.dart",
+        "sha256": "c7ea8bed6b55be0795e73dca4e667de8ae53669df1ef5e03de5a1a85b90a0fdf",
+        "bytes": 8687
+      },
+      {
+        "path": "flutter_app/lib/main.dart",
+        "sha256": "61831437dc74395e9bf1dbf6857522b21d0bcc97a19e6689efaa530c5492eafb",
+        "bytes": 3619
+      },
+      {
+        "path": "flutter_app/pubspec.lock",
+        "sha256": "4f0ac18cde0f8759465a09d77b9fb7d57a39271c6943183c3360a3f3484c0ffe",
+        "bytes": 12207
+      },
+      {
+        "path": "flutter_app/pubspec.yaml",
+        "sha256": "28cf85bbef05c0e4400e0a975307e5e283ee74ebcd61330a7b01303cd8ee3f8a",
+        "bytes": 459
+      },
+      {
+        "path": "flutter_app/test/widget_test.dart",
+        "sha256": "6a2fb3f52905f5ecabf729855ccc7be8488543f96ebb57e1bfdb58205f65924d",
+        "bytes": 460
+      },
+      {
+        "path": "literature/journal_target_analysis.md",
+        "sha256": "7c82c112f2f634b82352ce00b45d31dd1440e021d20bd55ed180f696deb04918",
+        "bytes": 2779
+      },
+      {
+        "path": "literature/journal_targets.csv",
+        "sha256": "7fd4d2fe7934e82c4a8b008989c3c75de4ad7544cc02e534bb265d33323fb6a4",
+        "bytes": 1935
+      },
+      {
+        "path": "literature/journal_verification_20260822.md",
+        "sha256": "97e49d38df25cfad1dfb157333ed8a952da437bb47063359d6b9c3b3db94009f",
+        "bytes": 2804
+      },
+      {
+        "path": "literature/literature_database.csv",
+        "sha256": "238b02e71ebfbe180d2e19cbad02bdcdf698e1a247a289586dbea5ca23dfbe16",
+        "bytes": 20027
+      },
+      {
+        "path": "literature/literature_review.md",
+        "sha256": "08c0bbe799e3338a24b1ff8f7da6ee015c62b4da4328314fbc714ff3754482de",
+        "bytes": 8784
+      },
+      {
+        "path": "literature/novelty_audit.md",
+        "sha256": "feb94776c05d62458744aa0951d2aea981bbd39e3dfec1abda819c6fc9185b0b",
+        "bytes": 3191
+      },
+      {
+        "path": "literature/research_gap_analysis.md",
+        "sha256": "4501d08bc7e169977c8ec5de7a6421ca5f31188f5cdec94bae81b3bb4af948c4",
+        "bytes": 6589
+      },
+      {
+        "path": "literature/research_gap_matrix.csv",
+        "sha256": "804f6b7a10ad3e41b31636253c804037b4b53151029c46a8f8e7e48d199bb15f",
+        "bytes": 3070
+      },
+      {
+        "path": "models/metadata/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "models/metadata/efficientnet_b0/20260822T085034Z.json",
+        "sha256": "cdf0c309fea762175f7f37216aef88ac57954595777128168148311a88f721f0",
+        "bytes": 3632
+      },
+      {
+        "path": "models/metadata/mobilenet_v2/20260821T145425Z.json",
+        "sha256": "976e51480c7ee0596c37597e036ad2fce43a6a349bee8bf151658470f7dfb827",
+        "bytes": 3147
+      },
+      {
+        "path": "models/metadata/mobilenet_v3_small/20260821T132810Z.json",
+        "sha256": "b3c2ff6dead4137141ccd93bee526eb1c354c68d42cb8361d3a94789b297d3a2",
+        "bytes": 4218
+      },
+      {
+        "path": "paper/code_availability.md",
+        "sha256": "08410f809bc521787f34c3466710c1903a356562e415616145c9a677952c4867",
+        "bytes": 657
+      },
+      {
+        "path": "paper/cover_letter_draft.md",
+        "sha256": "9d8d9a0139dcbaf884cfc3375e9dbda0de54f058d0fa8859eaff16d210f4a8c1",
+        "bytes": 2594
+      },
+      {
+        "path": "paper/data_availability.md",
+        "sha256": "45b1f32f7897534e606c7109b78a5c455fd0719395f2edccac25a487d4234c06",
+        "bytes": 788
+      },
+      {
+        "path": "paper/highlights.md",
+        "sha256": "858920ee3ebe348a58e85501c453fef780889e58977863e2564eac02a43d355d",
+        "bytes": 336
+      },
+      {
+        "path": "paper/journal_target_version.md",
+        "sha256": "38053aac8cddbd98cff1ad4cc2c24cc84ce35b588e1ce290a98c1ab02a1aebdc",
+        "bytes": 970
+      },
+      {
+        "path": "paper/manuscript_main.docx",
+        "sha256": "485c39a9881bf724cff9bd0127a175423b14dcc22ade5770bac61ee574e47dc1",
+        "bytes": 1670270
+      },
+      {
+        "path": "paper/manuscript_main.md",
+        "sha256": "5ed0ea626876ab101353a4856f5f76c9909048cad77a78cca65b22f4bb05eeef",
+        "bytes": 31728
+      },
+      {
+        "path": "paper/manuscript_main.pdf",
+        "sha256": "6b99e420148975903578b2fe132207e8daa76236934edd2c543f71869b09d0d0",
+        "bytes": 823659
+      },
+      {
+        "path": "paper/manuscript_main.unscrubbed.docx",
+        "sha256": "2ca60f115fd0ece97b498bc7445a7076014323a35f3d1b8f484a90d16fb8f541",
+        "bytes": 1670310
+      },
+      {
+        "path": "paper/references.bib",
+        "sha256": "c0db53b7064c0d432d138c64bbecae9d2392fdcb48af5e911846a94abcf1d912",
+        "bytes": 12887
+      },
+      {
+        "path": "paper/reproducibility_statement.md",
+        "sha256": "3aba98c3d6fc94daabb3199873c68877b1d28f6602706b88104de0d570055515",
+        "bytes": 1739
+      },
+      {
+        "path": "prior_research/README.md",
+        "sha256": "ff7efd50f83ad33831b40add5e9035da4ca2e6e74b81e13a5ce5745a8a35b079",
+        "bytes": 2034
+      },
+      {
+        "path": "prior_research/artifact_inventory.csv",
+        "sha256": "b533518579c14b0434db3c134298fdee52745d2ed632ab856057a20c424e9225",
+        "bytes": 1388
+      },
+      {
+        "path": "prior_research/lessons_learned.md",
+        "sha256": "68afbb3789942080708fc413601895711eee9f47801fd907690a0e8504761a97",
+        "bytes": 2049
+      },
+      {
+        "path": "prior_research/prior_quantization_extract.csv",
+        "sha256": "76ffc588617d87ecaadddadc28202f17febadb602e33fabd285713f1e0265eb2",
+        "bytes": 1487
+      },
+      {
+        "path": "reports/dataset_near_duplicate_candidates.csv",
+        "sha256": "52c68302d05d5639868527c6d42b43a0fc0bf3f946ace7b3883fd5ef21edd074",
+        "bytes": 118
+      },
+      {
+        "path": "reports/dataset_near_duplicate_candidates_official_fold0.csv",
+        "sha256": "187707dcc8dcfabf449c8026a8c2edf0efa88c01da5e7591ae9275f6deabc487",
+        "bytes": 2442
+      },
+      {
+        "path": "reports/dataset_near_duplicate_review.csv",
+        "sha256": "1d37ce5ff47804e6216be5f094b28397b1739367289c55d306ebbfc1c1e4c14d",
+        "bytes": 373
+      },
+      {
+        "path": "reports/dataset_report.json",
+        "sha256": "4a916633786385b7aae621565cf939780aadd19b7001bc6d28c1e5e2b94355d7",
+        "bytes": 1595
+      },
+      {
+        "path": "reports/dataset_report.md",
+        "sha256": "26647d2bf3f3106ec0d83b547c5ad5afb25c21c9cd490f4cdc6b0240b8e8f782",
+        "bytes": 796
+      },
+      {
+        "path": "reports/dataset_report_official_fold0.json",
+        "sha256": "bf4710a3857e211feba0a9f1533d71925ebeef75e82e2323327cb7372792777a",
+        "bytes": 1396
+      },
+      {
+        "path": "reports/dataset_report_official_fold0.md",
+        "sha256": "c70c31db0830b1607c57c58d7ffdc3e865fbbd8c07af0fbb1131a911212e6576",
+        "bytes": 709
+      },
+      {
+        "path": "reports/efficientnet_b0_20260822T085034Z_quantization_summary.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/efficientnet_b0_20260822T085034Z_quantization_summary.json",
+        "sha256": "38e63f7908b6b8e21e2d68d629ae4c5f48ce44769e0899e6f1867bc37dde437d",
+        "bytes": 2600
+      },
+      {
+        "path": "reports/efficientnet_b0_20260822T085034Z_tflite_verification.json",
+        "sha256": "779daada57cdc27bb4964ddffca5e5b2bdbc6763ac6844b9eef49a2a167ce97d",
+        "bytes": 3470
+      },
+      {
+        "path": "reports/efficientnet_b0_20260822T085034Z_validation.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/efficientnet_b0_20260822T085034Z_validation.json",
+        "sha256": "0f30f8590d316a8e658e1c61c7091b0f617c5ab0b3e3dc246cfde280d9b1d4c9",
+        "bytes": 849
+      },
+      {
+        "path": "reports/experiment_manifest.json",
+        "sha256": "db6213055db790930fe73abdf178e61c80a00fb0231dd8204312c2292f9e5be0",
+        "bytes": 11227
+      },
+      {
+        "path": "reports/experiment_manifest_20260821_execution_update.json",
+        "sha256": "4aa9a3f2cf2477280608410d888f7cc595f24edd6291d1e4ef1f6d87d4f23f45",
+        "bytes": 866
+      },
+      {
+        "path": "reports/experiment_manifest_pre_execution.json",
+        "sha256": "e6b070b2d65528e91cbe55baf807eab6b98eaa847ab58a0665a198f26e790061",
+        "bytes": 989
+      },
+      {
+        "path": "reports/final_apk.json",
+        "sha256": "a203c5b4b7932e40ec48f402295a9138d86e676f9f6642c0c3f5479f80ed7246",
+        "bytes": 790
+      },
+      {
+        "path": "reports/final_benchmark_audit.json",
+        "sha256": "3209020a5edb2d0b17647458ee6109aefd52e75e2dfa3e9fbb1539d8d802a33b",
+        "bytes": 2672
+      },
+      {
+        "path": "reports/final_test_manifest.json",
+        "sha256": "e6c4b49b8d7f1684f6c1d7036b957b5b4e08134394a5e01e34b5f3bc995d75e0",
+        "bytes": 9479
+      },
+      {
+        "path": "reports/flutter_model_bundle.json",
+        "sha256": "61143b5735fbe315af44288d00b5d7c9aabcfad4ac1a9833d882efcac9bd9582",
+        "bytes": 5165
+      },
+      {
+        "path": "reports/manuscript_a11y_audit.json",
+        "sha256": "c1b22c8053c1bff3149ac6d3dcbc2a899d388d0a8b6fd244cadb6cfb3b1ab514",
+        "bytes": 135
+      },
+      {
+        "path": "reports/mobilenet_v2_20260821T145425Z_quantization_summary.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/mobilenet_v2_20260821T145425Z_quantization_summary.json",
+        "sha256": "445243e466c7f34ac0889b70399ead908251cd16f117ecf13c42a71f1fb41860",
+        "bytes": 2560
+      },
+      {
+        "path": "reports/mobilenet_v2_20260821T145425Z_tflite_verification.json",
+        "sha256": "b7d900195d45c3da61fc5966fdfccd1ed477083a3d5789c5bf5087fb622d7f13",
+        "bytes": 3433
+      },
+      {
+        "path": "reports/mobilenet_v2_20260821T145425Z_validation.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/mobilenet_v2_20260821T145425Z_validation.json",
+        "sha256": "3cecdd1342a5f6ceefa43b70f4e143d67b18c4774a41534d33344e3e5fc04d7b",
+        "bytes": 846
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_calib800_flatbuffer_verification.json",
+        "sha256": "b3e57538d2c338a78dfe3e1ac5ace88bbc4972ec3d812913b10b16bd5d7b9f0a",
+        "bytes": 3541
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_flatbuffer_verification.json",
+        "sha256": "695f4bb4968aea0c9ad9d0b7faf16d7b26243c8f3bb93e0d057378bb9c125630",
+        "bytes": 3505
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_full_int8_calib800_validation_parity.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_full_int8_calib800_validation_parity.json",
+        "sha256": "ed6587c02b3cc4d6c0216763ca10a4aa91b7f0613628aaec7192e20bc558cb5b",
+        "bytes": 1374
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_quantization_summary.json",
+        "sha256": "d7695e88ce8830bc66cb022c6eccf7293bb123a3321c6e0e2811815ed728422d",
+        "bytes": 2096
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_tflite_validation_parity.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_tflite_validation_parity.json",
+        "sha256": "4fae7687777338fe476d7d59b02fce00d23cb8fd066c803a8d6747190940a414",
+        "bytes": 2640
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_validation.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "reports/mobilenet_v3_small_20260821T132810Z_validation.json",
+        "sha256": "51cd594070c0b284c3aa92d4908652192521b0efb6076857b6c0d581554c658f",
+        "bytes": 853
+      },
+      {
+        "path": "reports/model_feasibility.json",
+        "sha256": "535f05df9db499d13554ddf51864e1fab06496401d093073ff82c5ec8dc35c72",
+        "bytes": 2110
+      },
+      {
+        "path": "reports/model_feasibility_batch8.json",
+        "sha256": "63010957ab0ec10b548f582b60169aff0044687d8c12003bbf99b5cdf5366f07",
+        "bytes": 1983
+      },
+      {
+        "path": "reports/publication_readiness.json",
+        "sha256": "176a8f17da70f9c3a631f55e9c97acbc85287b8b39eec62edd1daac47fb889c1",
+        "bytes": 462
+      },
+      {
+        "path": "reports/training_efficientnet_b0.log",
+        "sha256": "84e19040be9b96397b08fc8a52eb756bee50600187315a6586af8fccbebfe884",
+        "bytes": 4636
+      },
+      {
+        "path": "reports/training_mobilenet_v2.log",
+        "sha256": "b37f15cc887576726d27ad3b2886644dc477dd367ec09bb7462b2392e95e084f",
+        "bytes": 4156
+      },
+      {
+        "path": "reports/training_mobilenet_v2_resume.log",
+        "sha256": "bbc426532b01e5d87caf362bb8c51cd82a250bcaae2718ede03ef6ed1fbbfb33",
+        "bytes": 3611
+      },
+      {
+        "path": "reports/training_mobilenet_v3_small_20260821T132810Z.log",
+        "sha256": "24df3dd07430f78eea7e51f1cb62953bfa4fafa8df2dbfca16ed566af1ca7077",
+        "bytes": 4757
+      },
+      {
+        "path": "requirements.txt",
+        "sha256": "6070deb7f4c2e3d7e8b5b1338d3c0bf0c77e41d61fa3bc19fb529416899cde25",
+        "bytes": 219
+      },
+      {
+        "path": "research_integrity/report.md",
+        "sha256": "4768804455947c0ae578da06ff596e335d2f61226a12542ff3b5d46df645bfdc",
+        "bytes": 4198
+      },
+      {
+        "path": "research_integrity/result_provenance.csv",
+        "sha256": "29962e4e6dfddf48ab038e0255bd4d48eecd745d38159d2e8414a90f744e88fe",
+        "bytes": 41145
+      },
+      {
+        "path": "results/figures/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "results/final/analysis_summary.json",
+        "sha256": "97b2418758e352e2856f4c9c8c6499f56803a91c9cc08208e87b4c4530882e63",
+        "bytes": 2685
+      },
+      {
+        "path": "results/final/figures/figure_1_accuracy_size.pdf",
+        "sha256": "b2e6f3d5e2e3dcf31ff8207fcf22587906e18ddfa67292834303de9aa3dc337b",
+        "bytes": 19338
+      },
+      {
+        "path": "results/final/figures/figure_1_accuracy_size.png",
+        "sha256": "c0f1a5ab002750aa10fc9e301b3fe0d8a87d0e77b7a2798bae5ee328d525ff23",
+        "bytes": 240017
+      },
+      {
+        "path": "results/final/figures/figure_2_latency.pdf",
+        "sha256": "c36c7f853b56baa84532f3f7d3444eea45b990cc647fcb22cfc12f9157cedaae",
+        "bytes": 20366
+      },
+      {
+        "path": "results/final/figures/figure_2_latency.png",
+        "sha256": "255802c87bebf97ecae59f343d4bc554829b842306e0fd43de77c76836265f9b",
+        "bytes": 485054
+      },
+      {
+        "path": "results/final/figures/figure_3_latency.pdf",
+        "sha256": "8c7cab963fc5869fbb03ef482522381c380f6368503650249a42ae75c48b95d2",
+        "bytes": 21175
+      },
+      {
+        "path": "results/final/figures/figure_3_latency.png",
+        "sha256": "fc457873739ddcde5911edd09a2fd46d4595abff133b51dac0421b54bb384d3a",
+        "bytes": 490821
+      },
+      {
+        "path": "results/final/figures/figure_4_pareto.pdf",
+        "sha256": "fcfbbb2460c69dc2e80338b84cad2b3812127f660fc43270dbe243333c886175",
+        "bytes": 23995
+      },
+      {
+        "path": "results/final/figures/figure_4_pareto.png",
+        "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+        "bytes": 400770
+      },
+      {
+        "path": "results/final/figures/figure_5_rank_stability.pdf",
+        "sha256": "840e68b02fae474ec5e4cbf22f0be494aa705dc60a97868873e05901956581a1",
+        "bytes": 16847
+      },
+      {
+        "path": "results/final/figures/figure_5_rank_stability.png",
+        "sha256": "35afd55a6d3ee4d270cbfd7e4498f14137166666293c81858a1886fb10732361",
+        "bytes": 450148
+      },
+      {
+        "path": "results/final/final_test_predictions.csv",
+        "sha256": "bd711a6f0f97182a01ead454dd60bcf305f301c9e1e328c6518e02e51a30be30",
+        "bytes": 3711986
+      },
+      {
+        "path": "results/final/final_test_report.gpu.json",
+        "sha256": "b07124400ca5a5712853f448a9515275a8b3b838867003fc59611da4893e9765",
+        "bytes": 455
+      },
+      {
+        "path": "results/final/final_test_report.json",
+        "sha256": "e6b45a22c223fff989978b4e19baab99c1d7858d078d9a45d6e1c856fc0a0656",
+        "bytes": 65416
+      },
+      {
+        "path": "results/final/final_test_started.json",
+        "sha256": "26cd9a7e750ef39fc4391edf46e165547b5d5999fdc5b3e7dd37744579a81549",
+        "bytes": 991
+      },
+      {
+        "path": "results/final/publication_supplement/figures/accuracy_latency_tradeoff.pdf",
+        "sha256": "2230e8a8b7f65a65f26cf0e32c45dc189c61e483dea97dfff730cd53208f7678",
+        "bytes": 23995
+      },
+      {
+        "path": "results/final/publication_supplement/figures/accuracy_latency_tradeoff.png",
+        "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+        "bytes": 400770
+      },
+      {
+        "path": "results/final/publication_supplement/figures/benchmark_distribution.pdf",
+        "sha256": "4f570821df614c7089c001f99f2f79dd4ea3ac74fae3ebcb22f9a69ab8fdde26",
+        "bytes": 49088
+      },
+      {
+        "path": "results/final/publication_supplement/figures/benchmark_distribution.png",
+        "sha256": "f301d510e5cf0bdf4ad785800cc0584b984142d393d82a62dd645e4a8d78d276",
+        "bytes": 618753
+      },
+      {
+        "path": "results/final/publication_supplement/figures/latency_comparison.pdf",
+        "sha256": "371d7403b71fc38d9bde76192b5e08d168a78abf1f1735497ef8f0cf3af34ee1",
+        "bytes": 17251
+      },
+      {
+        "path": "results/final/publication_supplement/figures/latency_comparison.png",
+        "sha256": "c0c223c246321f2c3a3bcd341ad04b0c8222060974f63dcb17557df240c963ee",
+        "bytes": 542466
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_architecture.pdf",
+        "sha256": "1d7e11dea19de2b35165e96003038f998c1d3e179a65b7c1415363edf10d0bff",
+        "bytes": 13586
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_architecture.png",
+        "sha256": "33feaa2018afafba34abb0bf18e9d32d5d74ae89a534e4c934dfc351665ff15c",
+        "bytes": 190903
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_size_comparison.pdf",
+        "sha256": "b1474449fab6607f6e83a9663a206e446a4750786a0bbce68c23a542fefb06b3",
+        "bytes": 16624
+      },
+      {
+        "path": "results/final/publication_supplement/figures/model_size_comparison.png",
+        "sha256": "9b7f4c6611922a74a3d29549c93c25a1daacd386025668ce2116fbed549c4090",
+        "bytes": 205704
+      },
+      {
+        "path": "results/final/publication_supplement/figures/pareto_front.pdf",
+        "sha256": "2230e8a8b7f65a65f26cf0e32c45dc189c61e483dea97dfff730cd53208f7678",
+        "bytes": 23995
+      },
+      {
+        "path": "results/final/publication_supplement/figures/pareto_front.png",
+        "sha256": "95a5a689385a01c20f5e4254c891677553b616adb9839d84f3d4168b4098af2b",
+        "bytes": 400770
+      },
+      {
+        "path": "results/final/publication_supplement/figures/runtime_comparison.pdf",
+        "sha256": "70728d04ee8479d9cda7bf574e7747e8db508b0b6a1aacfb096f2fcf881de73e",
+        "bytes": 15606
+      },
+      {
+        "path": "results/final/publication_supplement/figures/runtime_comparison.png",
+        "sha256": "88ddb283b4ea30cae1f25e72fa7efb3faca43e242ef96b181d52b0968c637ad3",
+        "bytes": 185535
+      },
+      {
+        "path": "results/final/publication_supplement/supplement_manifest.json",
+        "sha256": "9fb7a8aeabd9b5f0e631012383f7e82e1ad2bf700810b7d3f3f02038426ab226",
+        "bytes": 5299
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_1_dataset_training_configuration.csv",
+        "sha256": "a623f7f405b3d7627483dde00d514aba5d864962b7ccc77b741fdfe2b5e5fec8",
+        "bytes": 805
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_2_model_architecture_comparison.csv",
+        "sha256": "231a8484a3e82c20ae590f12b10b4636b3c143df6d0f2a141327c036f5ddb710",
+        "bytes": 612
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_3_accuracy_metrics.csv",
+        "sha256": "4410825ff29a5531cbabb71613eb2eb8b47a38d994bf3f6567fbb5e942ee86c7",
+        "bytes": 2553
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_4_quantization_model_sizes.csv",
+        "sha256": "6b9c9fb0dac87052e0cc5e99fef35a069b3a20d38e23004665b13a780ee29247",
+        "bytes": 1685
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_5_android_latency_statistics.csv",
+        "sha256": "e713a9ddeb9fb9dc86e9cf030b4ae27469a431bcb29b501b995e9471a2d8e08d",
+        "bytes": 16841
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_6_memory_measurements.csv",
+        "sha256": "5b5d0a18f3f5355eae92e8ff1f4e129657de722b2b3a47b19cccb2a8712a233a",
+        "bytes": 8527
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_7_runtime_delegate_comparison.csv",
+        "sha256": "23483e3a262027cbe36b11b39f09c928dd9e1ef569fd7f525fdd015260c92d70",
+        "bytes": 892
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_8_pareto_efficient_configurations.csv",
+        "sha256": "f741e5ab130582922976e93f9bdc9dbdbacf2f60bf4f5a2b998187493fdfe692",
+        "bytes": 1711
+      },
+      {
+        "path": "results/final/publication_supplement/tables/table_9_hardware_aware_recommendations.csv",
+        "sha256": "1294a722db8415527028721331618a2a9a8303ab27b969e48d77d50d0fecf8ac",
+        "bytes": 2827
+      },
+      {
+        "path": "results/final/table_configuration_errors.csv",
+        "sha256": "cdb75d15e49eb530e1c9b28a65da4dabb7cd5c8afdf720b56207739f44915543",
+        "bytes": 3435
+      },
+      {
+        "path": "results/final/table_configuration_results.csv",
+        "sha256": "510c92e79e9f1e63952c798ac8b9d0e55d844df0e44a7741fc8b1f3b28c2ba1e",
+        "bytes": 48535
+      },
+      {
+        "path": "results/final/table_model_results.csv",
+        "sha256": "781ee2e96d0e9589a8b2f91471cd412dc4b36cf093489442099f653f5e41f93e",
+        "bytes": 4316
+      },
+      {
+        "path": "results/final/table_rank_stability.csv",
+        "sha256": "97f59f32b895d9a8afef03c5365eba04525b7fa7041d9b9e3c8cabab41a978fe",
+        "bytes": 933
+      },
+      {
+        "path": "results/final/table_trial_summaries.csv",
+        "sha256": "40ed25b314af212f9862cd7cd7cce39f732a7a342a328c08bbc373e2be6e91c7",
+        "bytes": 51551
+      },
+      {
+        "path": "results/pretest/selection_summary.json",
+        "sha256": "eed6e926b24337f36ff34385eb201c462884ff59e6581b073ddf42747e7cf7af",
+        "bytes": 43378
+      },
+      {
+        "path": "results/processed/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "results/raw/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "results/statistics/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "results/tables/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "scripts/analyze_final_results.py",
+        "sha256": "13e2a4085cafd018526ac5701add8a3179a69b517f70f9db4af8aaa73cea1d98",
+        "bytes": 25867
+      },
+      {
+        "path": "scripts/analyze_pretest_selection.py",
+        "sha256": "560882f11792d621daba29457dd3400941e42b863585a802593ba046a7406f57",
+        "bytes": 11670
+      },
+      {
+        "path": "scripts/audit_final_benchmark.py",
+        "sha256": "7f2c7785cb6e214c31b1a4827a18feb24fd009b11eef552e996d1d72f121e3a3",
+        "bytes": 14852
+      },
+      {
+        "path": "scripts/build_manuscript_docx.py",
+        "sha256": "7bc91a7e1a485ab73f9085942ab7a0457f5de5b2eab1bab7b038fcee6b01bc04",
+        "bytes": 19295
+      },
+      {
+        "path": "scripts/create_calibration_npz.py",
+        "sha256": "0d6d948017a7265f17a1d0cadb4d0ba140eadc7ce154ba0c4d9636c0ab56beb3",
+        "bytes": 3445
+      },
+      {
+        "path": "scripts/create_grouped_split.py",
+        "sha256": "a5a4f45d92049a745129365ad210647334dc9e675947af5fc28c83bf10669c5f",
+        "bytes": 8351
+      },
+      {
+        "path": "scripts/download_deepweeds.py",
+        "sha256": "532b1ac50cbd4d8dc4ee5786555839b4a9a1cc66f9c764c012c04358368cd65b",
+        "bytes": 3970
+      },
+      {
+        "path": "scripts/enable_wsl_features.ps1",
+        "sha256": "8c3bdeb3f667d4c02f54c719f7911a50500d018c36d1fef55ca7f434f87d0545",
+        "bytes": 509
+      },
+      {
+        "path": "scripts/evaluate_final_test.py",
+        "sha256": "8ee007b50abad0b0d00ef6834e47f52e14d9829eb366b344b28b2b38f371a69f",
+        "bytes": 15911
+      },
+      {
+        "path": "scripts/evaluate_saved_model.py",
+        "sha256": "c27e48029deaa97f397157e8980df57bafc9012a1f03c5da1768db79ae487aaa",
+        "bytes": 2679
+      },
+      {
+        "path": "scripts/evaluate_tflite_parity.py",
+        "sha256": "9e271f6105a0e77280632ca4a392c0aeb72c2dea3047065b58a713dec8d67713",
+        "bytes": 5343
+      },
+      {
+        "path": "scripts/extract_bounded_benchmark.py",
+        "sha256": "73601310c366ca5be076593d182c6e83124cd2f34d1f0cc8a484c92b34b64411",
+        "bytes": 6388
+      },
+      {
+        "path": "scripts/finalize_manuscript.py",
+        "sha256": "90ec3169b4bd943a9596574275a857bf4c9d7b008648be9a7ed184d43131a8a1",
+        "bytes": 21081
+      },
+      {
+        "path": "scripts/finalize_project_docs.py",
+        "sha256": "1e7855ee6b580c0f2bf35c2d4f925a19472dda91e731090c6987b34554fc465b",
+        "bytes": 8647
+      },
+      {
+        "path": "scripts/finalize_publication_text.py",
+        "sha256": "5dfaae268542ea50194c46cb04d4ce5a1ea0a40ba5cee7f54d7f2313322048a9",
+        "bytes": 10570
+      },
+      {
+        "path": "scripts/finalize_research_integrity.py",
+        "sha256": "1c8a3dce035b80e417655a5a24b3da9bab09d23067a24bb126198df260969890",
+        "bytes": 17499
+      },
+      {
+        "path": "scripts/freeze_final_test_manifest.py",
+        "sha256": "75a941189a3b02e6569ef5822fb1b3b30b21b2374732aad3b0ed46ea6f00fc34",
+        "bytes": 8413
+      },
+      {
+        "path": "scripts/generate_publication_supplement.py",
+        "sha256": "bd29c9fec55ffc612b4bbd893d25c8bb2bd1a5404cdb05ddd6eab15c9f2d5c4d",
+        "bytes": 12704
+      },
+      {
+        "path": "scripts/generate_references.py",
+        "sha256": "bb5b3e9e86cc13c4547d57d16cc4c50c3efc27028620796909e4615d8c57e5bb",
+        "bytes": 2673
+      },
+      {
+        "path": "scripts/gpu_smoke_test.py",
+        "sha256": "cd79538c6e480947da4b1a382fc29c7686fc4a22d08d35c47d55bc3b52e0023f",
+        "bytes": 2670
+      },
+      {
+        "path": "scripts/model_feasibility.py",
+        "sha256": "e2913d7b8542823817612a2b44c2ed1eb09ee788caf2c86033de766077de3587",
+        "bytes": 4545
+      },
+      {
+        "path": "scripts/package_publication.py",
+        "sha256": "a30e1b4e280d302064c28d8b3a8048b018172ef9eedb552a53ebc75aa6efdf55",
+        "bytes": 6061
+      },
+      {
+        "path": "scripts/prepare_dataset.py",
+        "sha256": "11784975ae6858a0d770173788badc1d828cc6c4c5d76c7b93bb94cf57c8af8e",
+        "bytes": 3899
+      },
+      {
+        "path": "scripts/prepare_flutter_assets.py",
+        "sha256": "470626435e1d4ea86484ccc0f681a9126d153df9f8c5ae3ae844e6c59bebde2d",
+        "bytes": 5698
+      },
+      {
+        "path": "scripts/quantize_models.py",
+        "sha256": "80c4fd07d0881ed2492666633129d0e7fa44410805a81bee4b5f45484e4191be",
+        "bytes": 1418
+      },
+      {
+        "path": "scripts/resume_training.py",
+        "sha256": "8571f8d3b0da315f3f65be87c04f2e64ff585106494c90995d65f95840e608fd",
+        "bytes": 5934
+      },
+      {
+        "path": "scripts/run_wsl_gpu_python.sh",
+        "sha256": "5cbdb11e02d8628940f4909a70dbb8e79f57d4362de7ae0d86b5c5565980b758",
+        "bytes": 739
+      },
+      {
+        "path": "scripts/run_wsl_gpu_resume.sh",
+        "sha256": "bc9174360770e6a11ae1b21de8b63e149a9f3f5622e2a85cfd456554f371c340",
+        "bytes": 766
+      },
+      {
+        "path": "scripts/run_wsl_gpu_training.sh",
+        "sha256": "b482b190a6fba22ddcee0fa8b37543a8db9e44ca9adfd4c8d3b4852389c710b1",
+        "bytes": 974
+      },
+      {
+        "path": "scripts/start_resume_background.sh",
+        "sha256": "8cff2dfd1d54d939287c7b964a08a5df22d02711ea16bfac25276225ef53f567",
+        "bytes": 347
+      },
+      {
+        "path": "scripts/start_training_background.sh",
+        "sha256": "a4856df80a9429fe89b1ac9799fa85b20234a7cc430a23d446b6b6d4b665f2ed",
+        "bytes": 351
+      },
+      {
+        "path": "scripts/summarize_benchmarks.py",
+        "sha256": "bddb6367a894dde8eeefaf0b2580e2d12bb2be0423f7e5445fa838be5116075e",
+        "bytes": 2327
+      },
+      {
+        "path": "scripts/train_models.py",
+        "sha256": "e7bb9fa484c37fb1e0e6ccf883ee05c557aa9fbe1ed3d31b3e72736bb1f40436",
+        "bytes": 6778
+      },
+      {
+        "path": "scripts/validate_dataset.py",
+        "sha256": "55c013f363574b6c0a60cb5d3c4b1600b72c48d8ea41800e4cb65be69cf52e87",
+        "bytes": 11520
+      },
+      {
+        "path": "scripts/verify_publication_package.py",
+        "sha256": "e181d6a0f830e1cdd48aebeee698dd1ee851c60e9472007becb5bbb1749f237a",
+        "bytes": 12744
+      },
+      {
+        "path": "scripts/verify_tflite_variants.py",
+        "sha256": "eb6b4d04fd860049b6e68e9960632922a50c35e440d88f02d23c18258bcb96f1",
+        "bytes": 2609
+      },
+      {
+        "path": "src/__init__.py",
+        "sha256": "c15036376e43fa35c887402889cf6c5e05a491687fa40fe2caf8a298ad5c109a",
+        "bytes": 55
+      },
+      {
+        "path": "src/benchmark/__init__.py",
+        "sha256": "f758a9c2821f8421123c85d960d24883e97d452482676f0dbe7c0f0e694b0413",
+        "bytes": 140
+      },
+      {
+        "path": "src/benchmark/statistics.py",
+        "sha256": "1da543d7226d75bb853bc55be1d5d23a020eb521c2332fd94e0f551dc4707f1c",
+        "bytes": 1839
+      },
+      {
+        "path": "src/data/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "src/data/__init__.py",
+        "sha256": "e8d78451fee3fbf041374072c76efecdab6e75dc4fc6baa35a0b5d5a25ecb521",
+        "bytes": 207
+      },
+      {
+        "path": "src/data/deepweeds.py",
+        "sha256": "373300ca2b4c6196b56452e0f15cdfbf9ff4cea4b40357632d80b215c2674b98",
+        "bytes": 2763
+      },
+      {
+        "path": "src/data/tf_pipeline.py",
+        "sha256": "1f6cc2a82637f5e41354efa5c07cb6e331750f02afa69e646e20a54665b5f832",
+        "bytes": 2325
+      },
+      {
+        "path": "src/models/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "src/models/__init__.py",
+        "sha256": "98a7ed562bcdec8af98681af04cc7f93768fc98d8f8c5af7a9a731f64f85c9ec",
+        "bytes": 109
+      },
+      {
+        "path": "src/models/factory.py",
+        "sha256": "9de6ca6f008f0ed865ea75285e57c20f1364aa4e1f4034a13590fffe2acf38a4",
+        "bytes": 1808
+      },
+      {
+        "path": "src/quantization/__init__.py",
+        "sha256": "4ddb824fdb79ddbcb34cdd285041d0019d2a491db7a7c34b25ec937191a3b48d",
+        "bytes": 169
+      },
+      {
+        "path": "src/quantization/tensor_io.py",
+        "sha256": "abeebbc96798eae476136e9d6993e3f614e3ed78bc7c79433e7c14bef67b3818",
+        "bytes": 2034
+      },
+      {
+        "path": "src/quantization/tflite_variants.py",
+        "sha256": "1afb51c5277d9f4a25d8f3eb4087a390cee6b517532ce9eeb12300f5189979bf",
+        "bytes": 4409
+      },
+      {
+        "path": "src/selection/__init__.py",
+        "sha256": "3f2e9e4f6df8663bd4815754c9bbffb48468e4147a9bad6149ea6f32d3946c4a",
+        "bytes": 138
+      },
+      {
+        "path": "src/selection/pareto.py",
+        "sha256": "7118be217bbc4f3837822a7ebc87bcc962d7952dd363b9432e876eee1c4f33e6",
+        "bytes": 1861
+      },
+      {
+        "path": "src/statistics/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "src/training/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "src/training/__init__.py",
+        "sha256": "5bcc8228175d3f8c79a19a587433d66d1bf88c5e6ae85355911f99b594f72b6f",
+        "bytes": 41
+      },
+      {
+        "path": "src/training/device.py",
+        "sha256": "6d1c109702969bf8555c3ec59bbd34568a1fba8096ca401533b5fe285678c794",
+        "bytes": 1807
+      },
+      {
+        "path": "src/utils/.gitkeep",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "bytes": 1
+      },
+      {
+        "path": "tests/test_deepweeds.py",
+        "sha256": "b05d860b6ba009f22668f883b3fd78d0bfb613a455ca940613aa71a6836fdabd",
+        "bytes": 2226
+      },
+      {
+        "path": "tests/test_pareto.py",
+        "sha256": "14bdd33f168d8c8eea572c1ba5bec725d60640e89aa9f6995ccc41f893435414",
+        "bytes": 877
+      },
+      {
+        "path": "tests/test_statistics.py",
+        "sha256": "2ba4ad9dee3a98d37d099313bb0bfab517787788a6cdb958e50ac08954e7bd5c",
+        "bytes": 889
+      },
+      {
+        "path": "tests/test_tensor_io.py",
+        "sha256": "40e3395ee2622a7189f0ff1d10db06b1a79617973fea37c88f872853a3174fda",
+        "bytes": 1506
+      }
+    ]
+  }
+}

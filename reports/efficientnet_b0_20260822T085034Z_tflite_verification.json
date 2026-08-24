@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "purpose": "flatbuffer allocation only; delegate compatibility is separate",
+  "runtime": "builtin_without_default_delegates",
+  "variants": {
+    "efficientnet_b0_20260822T085034Z__dynamic_int8": {
+      "status": "success",
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__dynamic_int8.tflite",
+      "size_bytes": 4592176,
+      "sha256": "9d69d6ea033bbb5181ebf3fb5abb873a8c4407262e32f3bf25bf6bbe411052c9",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ]
+    },
+    "efficientnet_b0_20260822T085034Z__float16": {
+      "status": "success",
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__float16.tflite",
+      "size_bytes": 8165448,
+      "sha256": "8b487a2559093bb4a7f986aa93665bf5c61d27c44c836376ec46bebc84d1bc8c",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ]
+    },
+    "efficientnet_b0_20260822T085034Z__float32": {
+      "status": "success",
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__float32.tflite",
+      "size_bytes": 16115064,
+      "sha256": "4e7bf575be33b6f10e45f58a6f5b2aa4ac03b48b6e5b563369fa98b03d95d03a",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "float32",
+          "scale": 0.0,
+          "zero_point": 0
+        }
+      ]
+    },
+    "efficientnet_b0_20260822T085034Z__full_int8": {
+      "status": "success",
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__full_int8.tflite",
+      "size_bytes": 4953200,
+      "sha256": "bf768dda79fe589885aa9c79820a478236c331901a921dec3f8de87c8219a214",
+      "inputs": [
+        {
+          "name": "serving_default_image:0",
+          "shape": [
+            1,
+            224,
+            224,
+            3
+          ],
+          "dtype": "int8",
+          "scale": 1.0,
+          "zero_point": -128
+        }
+      ],
+      "outputs": [
+        {
+          "name": "StatefulPartitionedCall_1:0",
+          "shape": [
+            1,
+            9
+          ],
+          "dtype": "int8",
+          "scale": 0.00390625,
+          "zero_point": -128
+        }
+      ]
+    }
+  }
+}

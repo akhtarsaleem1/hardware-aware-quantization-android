@@ -1,0 +1,3 @@
+# Code availability
+
+The artifact package includes dataset validation and grouped splitting, GPU-fail-closed training, post-training conversion, parity and flatbuffer checks, Flutter local inference and release benchmarking, independent raw-run audit, pretest Pareto selection, one-shot locked-test evaluation, statistical analysis, figure generation, manuscript population, and publication-readiness verification. Exact environment reports, APK/model/data hashes, and protocol files are included. The reproducibility artifact has the reserved Zenodo DOI https://doi.org/10.5281/zenodo.22080295; the record will be made public before manuscript submission.

@@ -1,0 +1,7 @@
+runtime,threads,successful_configurations,median_of_trial_medians_ms,median_of_trial_p95_ms,median_trial_cv,median_pss_mb,median_rss_mb,effective_delegate,configuration_error_rows
+builtin_cpu,1,12,375.236375,403.52520000000004,0.0068624693796860495,562.3564453125,495.6591796875,none_builtin,0
+builtin_cpu,2,12,376.2635,403.6641625,0.00553075976922565,584.571044921875,557.97705078125,none_builtin,0
+builtin_cpu,4,12,378.45925,410.5652875,0.00460255100847455,581.95751953125,521.7080078125,none_builtin,0
+xnnpack_cpu,1,11,390.04175,409.203725,0.0105320226552549,565.3037109375,539.5791015625,xnnpack_initialized_partition_unverified,2
+xnnpack_cpu,2,11,395.034,414.14525,0.0066765602139843,475.21923828125,506.505859375,xnnpack_initialized_partition_unverified,2
+xnnpack_cpu,4,11,393.49025,421.704925,0.0047668661056183,553.5986328125,501.6943359375,xnnpack_initialized_partition_unverified,2

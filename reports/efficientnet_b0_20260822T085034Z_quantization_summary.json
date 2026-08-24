@@ -1,0 +1,62 @@
+{
+  "status": "VALIDATION_PARITY_ONLY_TEST_SPLIT_UNTOUCHED",
+  "split": "validation",
+  "dataset_protocol": "grouped_capture_session_v1_gap90_seed42",
+  "sample_count": 3502,
+  "keras_model": "models/saved/efficientnet_b0/20260822T085034Z.keras",
+  "keras_reference_accuracy": 0.797829811536265,
+  "keras_execution_device": "/GPU:0",
+  "tflite_runtime": "builtin_without_default_delegates_cpu",
+  "gpu_report": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.13.15",
+    "tensorflow": "2.21.0",
+    "physical_gpus": [
+      {
+        "name": "/physical_device:GPU:0",
+        "device_type": "GPU",
+        "compute_capability": [
+          7,
+          5
+        ],
+        "device_name": "NVIDIA GeForce GTX 1650"
+      }
+    ],
+    "nvidia_smi": "NVIDIA GeForce GTX 1650, 4096 MiB, 610.88",
+    "policy": "GPU_REQUIRED_ABORT_ON_CPU_FALLBACK"
+  },
+  "variants": {
+    "efficientnet_b0_20260822T085034Z__dynamic_int8": {
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__dynamic_int8.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.7972587093089663,
+      "top1_agreement_with_keras": 0.9568817818389491,
+      "mean_absolute_probability_error": 0.009244007167931237,
+      "maximum_absolute_probability_error": 0.49508923292160034
+    },
+    "efficientnet_b0_20260822T085034Z__float16": {
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__float16.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.7986864648772131,
+      "top1_agreement_with_keras": 0.997430039977156,
+      "mean_absolute_probability_error": 0.0003171688416876498,
+      "maximum_absolute_probability_error": 0.021236658096313477
+    },
+    "efficientnet_b0_20260822T085034Z__float32": {
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__float32.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.797829811536265,
+      "top1_agreement_with_keras": 1.0,
+      "mean_absolute_probability_error": 1.3441299290919346e-07,
+      "maximum_absolute_probability_error": 1.576542854309082e-05
+    },
+    "efficientnet_b0_20260822T085034Z__full_int8": {
+      "path": "models/tflite/efficientnet_b0/20260822T085034Z/efficientnet_b0_20260822T085034Z__full_int8.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.7141633352370075,
+      "top1_agreement_with_keras": 0.7441462021701885,
+      "mean_absolute_probability_error": 0.058237086081017124,
+      "maximum_absolute_probability_error": 0.9918010830879211
+    }
+  }
+}

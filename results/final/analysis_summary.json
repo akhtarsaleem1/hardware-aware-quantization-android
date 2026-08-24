@@ -1,0 +1,56 @@
+{
+  "status": "FINAL_ANALYSIS_COMPLETE",
+  "raw_csv": "benchmark/raw/final_realme_RMX3760_protocol1_2_bounded_trials_1_2.csv",
+  "raw_csv_sha256": "5c129b5d6adfa10e3db3f4f66e118665470e89ceffd780d414dcc06483dd762b",
+  "benchmark_audit": "reports/final_benchmark_audit.json",
+  "benchmark_audit_sha256": "3209020a5edb2d0b17647458ee6109aefd52e75e2dfa3e9fbb1539d8d802a33b",
+  "test_report": "results/final/final_test_report.json",
+  "test_report_sha256": "e6b45a22c223fff989978b4e19baab99c1d7858d078d9a45d6e1c856fc0a0656",
+  "selection_manifest": "reports/final_test_manifest.json",
+  "selection_manifest_sha256": "e6c4b49b8d7f1684f6c1d7036b957b5b4e08134394a5e01e34b5f3bc995d75e0",
+  "pareto_selection_uses_validation_not_test": true,
+  "measured_observations": 13800,
+  "configuration_error_rows": 6,
+  "successful_configurations": 69,
+  "complete_trials_per_successful_configuration": 2,
+  "independent_device_count": 1,
+  "inference_rows_are_not_treated_as_independent_device_replicates": true,
+  "median_pareto_configuration_ids": [
+    "mobilenet_v2_dynamic_int8__xnnpack_cpu__1t",
+    "mobilenet_v2_float16__xnnpack_cpu__1t",
+    "mobilenet_v2_float32__xnnpack_cpu__1t",
+    "mobilenet_v2_full_int8__xnnpack_cpu__1t",
+    "mobilenet_v3_small_dynamic_int8__xnnpack_cpu__4t",
+    "mobilenet_v3_small_float16__xnnpack_cpu__2t",
+    "mobilenet_v3_small_full_int8__builtin_cpu__4t"
+  ],
+  "p95_pareto_configuration_ids": [
+    "mobilenet_v2_dynamic_int8__xnnpack_cpu__1t",
+    "mobilenet_v2_float16__xnnpack_cpu__1t",
+    "mobilenet_v2_float32__xnnpack_cpu__1t",
+    "mobilenet_v2_full_int8__xnnpack_cpu__2t",
+    "mobilenet_v3_small_dynamic_int8__xnnpack_cpu__1t",
+    "mobilenet_v3_small_full_int8__builtin_cpu__2t"
+  ],
+  "rank_stability_spearman_min": -1.0,
+  "rank_stability_spearman_median": 0.8999999999999999,
+  "hypothesis_evidence": {
+    "H1_size_vs_latency_rank_mismatch_contexts": 18,
+    "H1_total_contexts": 18,
+    "H2_runtime_rank_change_contexts": 7,
+    "H2_total_comparable_contexts": 9,
+    "H3_dominated_int8_configurations_median_front": 29,
+    "H4_median_trial_cv_by_runtime": {
+      "builtin_cpu": 0.005150970753713168,
+      "xnnpack_cpu": 0.007801832052648556
+    },
+    "H4_max_to_min_runtime_cv_ratio": 1.5146333430498453,
+    "interpretation_policy": "descriptive_complete_trial_evidence_not_automatic_significance_claims"
+  },
+  "limitations": [
+    "one physical Android device; no hardware-level generalization",
+    "2 complete trials yield imprecise trial-level uncertainty",
+    "USB charging and background applications were recorded but not fully controlled",
+    "process PSS/RSS are observational snapshots, not isolated model peak memory"
+  ]
+}

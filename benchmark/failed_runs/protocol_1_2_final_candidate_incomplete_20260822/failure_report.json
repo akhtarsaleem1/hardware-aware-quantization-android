@@ -1,0 +1,12 @@
+{
+  "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_CONFIRMATORY_ANALYSIS",
+  "reason": "process absent and no terminal completion status; trial 3 stopped after 60/100 measured invocations for mobilenet_v2_float32/xnnpack_cpu/2t",
+  "source_raw": "benchmark\\failed_runs\\protocol_1_2_final_candidate_incomplete_20260822\\benchmark_raw_partial.csv",
+  "source_raw_sha256": "c6b00ae233fa5c191378cb151779d479032d7dead806e07e721a60d19081f85d",
+  "source_data_rows": 17168,
+  "planned_complete_trials": 3,
+  "completed_balanced_trials": 2,
+  "partial_trial_excluded_wholesale": 3,
+  "pooling_or_imputation": false,
+  "confirmatory_android_matrix_completed": false
+}

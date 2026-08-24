@@ -1,0 +1,18 @@
+{
+  "status": "DATASET_FROZEN_GPU_VERIFIED_TRAINING_READY",
+  "created": "2026-08-21",
+  "random_seed": 42,
+  "dataset": {
+    "name": "DeepWeeds",
+    "archive_sha256": "0961f63c01b997bfab1559ad09e99c0e8130617fd96a8b92fdc09940e01b0ce8",
+    "split_protocol": "grouped_capture_session_v1_gap90_seed42",
+    "manifest_metadata": "data/manifests_grouped/manifest_metadata.json",
+    "validation_report": "reports/dataset_report.json"
+  },
+  "models": ["mobilenet_v2", "mobilenet_v3_small", "efficientnet_b0"],
+  "model_hashes": {},
+  "benchmark_protocol": "benchmark/benchmark_config.yaml",
+  "device_profile": "benchmark/device_profile.json",
+  "git_commit": "NOT_AVAILABLE_WORKSPACE_ROOT_NOT_A_GIT_REPOSITORY",
+  "notes": "Dataset split and model feasibility matrix are frozen. TensorFlow 2.21.0 GPU execution passed under WSL2. Batch 16 failed for EfficientNet-B0 with GPU OOM; batch 8 passed for all models and is frozen for training. No trained model or benchmark result exists yet."
+}

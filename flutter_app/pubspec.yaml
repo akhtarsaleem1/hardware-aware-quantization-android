@@ -1,0 +1,25 @@
+name: quant_repeatability_benchmark
+description: "Research-only Android LiteRT repeatability benchmark."
+publish_to: none
+version: 1.2.0+3
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image: ^4.9.2
+  image_picker: ^1.2.3
+  tflite_flutter: ^0.12.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/benchmark_manifest.json
+    - assets/models/

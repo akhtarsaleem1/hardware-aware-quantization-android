@@ -1,0 +1,28 @@
+{
+  "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_ANALYSIS",
+  "protocol_version": "1.2.0",
+  "app_version": "1.2.0+3",
+  "device_id": "realme_RMX3760_api35",
+  "raw_partial_csv": "benchmark/failed_runs/protocol_1_2_foreground_loss_20260822/benchmark_raw_partial.csv",
+  "raw_partial_sha256": "75381e5341539ede845210def57208b7184e33fe0dd6dc38b2a2943bc9e685a9",
+  "raw_partial_bytes": 788393,
+  "data_rows": 1886,
+  "first_timestamp_utc": "2026-08-22T12:06:40.583125Z",
+  "last_timestamp_utc": "2026-08-22T12:23:39.400807Z",
+  "last_complete_row": {
+    "model_id": "mobilenet_v3_small_dynamic_int8",
+    "runtime": "xnnpack_cpu",
+    "threads": 1,
+    "trial_id": 1,
+    "randomized_order_index": 21,
+    "run_index": 82
+  },
+  "completion_status_file_present": false,
+  "failure_classification": "FOREGROUND_CONDITION_VIOLATED",
+  "foreground_loss_local": "2026-08-22T17:18:44.557+05:00",
+  "unexpected_top_activity": "com.whatsapp/.Conversation",
+  "benchmark_pid": 4709,
+  "termination": "force-stopped after failure classification to prevent further invalid rows",
+  "analysis_policy": "Never pool, resume, impute, or analyze this partial run. Restart the complete randomized matrix in a new raw file.",
+  "test_split_accessed": false
+}

@@ -1,0 +1,62 @@
+{
+  "status": "VALIDATION_PARITY_ONLY_TEST_SPLIT_UNTOUCHED",
+  "split": "validation",
+  "dataset_protocol": "grouped_capture_session_v1_gap90_seed42",
+  "sample_count": 3502,
+  "keras_model": "models/saved/mobilenet_v3_small/20260821T132810Z.keras",
+  "keras_reference_accuracy": 0.7384351798972016,
+  "keras_execution_device": "/GPU:0",
+  "tflite_runtime": "builtin_without_default_delegates_cpu",
+  "gpu_report": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.13.15",
+    "tensorflow": "2.21.0",
+    "physical_gpus": [
+      {
+        "name": "/physical_device:GPU:0",
+        "device_type": "GPU",
+        "compute_capability": [
+          7,
+          5
+        ],
+        "device_name": "NVIDIA GeForce GTX 1650"
+      }
+    ],
+    "nvidia_smi": "NVIDIA GeForce GTX 1650, 4096 MiB, 610.88",
+    "policy": "GPU_REQUIRED_ABORT_ON_CPU_FALLBACK"
+  },
+  "variants": {
+    "mobilenet_v3_small_20260821T132810Z__dynamic_int8": {
+      "path": "models/tflite/mobilenet_v3_small/20260821T132810Z/mobilenet_v3_small_20260821T132810Z__dynamic_int8.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.7535693889206168,
+      "top1_agreement_with_keras": 0.8737864077669902,
+      "mean_absolute_probability_error": 0.025447112299034836,
+      "maximum_absolute_probability_error": 0.7879008054733276
+    },
+    "mobilenet_v3_small_20260821T132810Z__float16": {
+      "path": "models/tflite/mobilenet_v3_small/20260821T132810Z/mobilenet_v3_small_20260821T132810Z__float16.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.7398629354654483,
+      "top1_agreement_with_keras": 0.9951456310679612,
+      "mean_absolute_probability_error": 0.0009897895072085612,
+      "maximum_absolute_probability_error": 0.054353028535842896
+    },
+    "mobilenet_v3_small_20260821T132810Z__float32": {
+      "path": "models/tflite/mobilenet_v3_small/20260821T132810Z/mobilenet_v3_small_20260821T132810Z__float32.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.7384351798972016,
+      "top1_agreement_with_keras": 1.0,
+      "mean_absolute_probability_error": 2.719159728272782e-07,
+      "maximum_absolute_probability_error": 1.1980533599853516e-05
+    },
+    "mobilenet_v3_small_20260821T132810Z__full_int8": {
+      "path": "models/tflite/mobilenet_v3_small/20260821T132810Z/mobilenet_v3_small_20260821T132810Z__full_int8.tflite",
+      "sample_count": 3502,
+      "accuracy": 0.5796687607081668,
+      "top1_agreement_with_keras": 0.5285551113649343,
+      "mean_absolute_probability_error": 0.09995607271888769,
+      "maximum_absolute_probability_error": 0.9997732043266296
+    }
+  }
+}

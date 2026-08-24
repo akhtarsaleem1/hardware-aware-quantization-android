@@ -1,0 +1,49 @@
+{
+  "status": "VALIDATION_ONLY_TEST_SPLIT_UNTOUCHED",
+  "model": "mobilenet_v3_small",
+  "run_id": "20260821T132810Z",
+  "keras_sha256": "329cf2ff2ab5543697d2de5fdf5623d840a9c301abafb7be9675e39c09a89dad",
+  "keras_validation_accuracy": 0.7384351798972016,
+  "canonical_calibration": {
+    "source_split": "train",
+    "sample_count": 800,
+    "npz_sha256": "a25ec305b1e86151794e9fd268fedc1e40feea23643d42e95286ce219d36788c"
+  },
+  "variants": {
+    "float32": {
+      "size_bytes": 3782516,
+      "sha256": "cf6183dcd31c9ec34724e8f68d15423dc09b0cf71b1e91ba37800321b7526ba4",
+      "validation_accuracy": 0.7384351798972016,
+      "top1_agreement_with_keras": 1.0
+    },
+    "float16": {
+      "size_bytes": 1967356,
+      "sha256": "201167c633c4c8714d7c84905e88fe159d76e9eff38c91b70708b1ced5a8bb00",
+      "validation_accuracy": 0.7398629354654483,
+      "top1_agreement_with_keras": 0.9951456310679612
+    },
+    "dynamic_int8": {
+      "size_bytes": 1144288,
+      "sha256": "1c3ca9e08ab14de0d8e7ca58f127b9955ae2cf3e9ffaad5033952bcbb51dd82f",
+      "validation_accuracy": 0.7535693889206168,
+      "top1_agreement_with_keras": 0.8737864077669902,
+      "interpretation": "apparent accuracy increase but substantial prediction churn; requires final test and class-level analysis"
+    },
+    "full_int8": {
+      "size_bytes": 1252008,
+      "sha256": "7eb4e5feb3ad6a7ffe9c7d81f9f7b78d520a334323c091aaddccb8859c84991b",
+      "validation_accuracy": 0.5588235294117647,
+      "top1_agreement_with_keras": 0.5062821245002855,
+      "desktop_xnnpack_allocation": "failed",
+      "builtin_allocation": "success",
+      "interpretation": "post-training full INT8 rejected for deployment pending a separately designed QAT experiment"
+    }
+  },
+  "calibration_sensitivity_pilot": {
+    "sample_count": 100,
+    "npz_sha256": "354884ac87c42480a5a92922930dc9bb525043bf35754ea054d1a6524897f35a",
+    "full_int8_validation_accuracy": 0.5796687607081668,
+    "full_int8_top1_agreement_with_keras": 0.5285551113649343,
+    "conclusion": "increasing calibration coverage did not repair the degradation"
+  }
+}

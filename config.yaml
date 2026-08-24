@@ -1,0 +1,68 @@
+project:
+  working_title: "Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android"
+  status: "dataset_frozen_gpu_verified_training_ready"
+  random_seed: 42
+
+dataset:
+  name: "DeepWeeds"
+  version: "official archive sha256:0961f63c01b997bfab1559ad09e99c0e8130617fd96a8b92fdc09940e01b0ce8"
+  license: "CC BY 4.0"
+  root: "${DATASET_PATH:-data/source/DeepWeeds}"
+  manifest_dir: "data/manifests_grouped"
+  split_protocol: "grouped_capture_session_v1_gap90_seed42"
+  image_size: [224, 224]
+
+models:
+  candidates:
+    - mobilenet_v2
+    - mobilenet_v3_small
+    - efficientnet_b0
+  pretrained_source: "ImageNet where justified"
+
+training:
+  framework: "tensorflow_2.21_wsl2_gpu"
+  batch_size: 8
+  epochs: 30
+  frozen_backbone_epochs: 5
+  early_stopping_patience: 5
+  optimizer: "adam"
+  learning_rate: 0.001
+  fine_tuning_learning_rate: 0.00001
+  deterministic_where_practical: true
+  heavy_compute_device: "gpu_required_when_supported"
+  abort_on_unexpected_cpu_fallback: true
+  gpu_memory_limit_gib: 4
+  mixed_precision: false
+  class_weighting: "balanced_training_only"
+
+quantization:
+  variants: [float32, float16, dynamic_int8, full_int8]
+  representative_batches: 100
+  representative_source: "training_split_only"
+  require_parity_evaluation: true
+
+benchmark:
+  warmup_runs: 20
+  measured_runs: 100
+  complete_trials: 3
+  randomize_configuration_order: true
+  order_seed: 42
+  threads: [1, 2, 4]
+  delegates: [xnnpack_cpu, nnapi_if_supported]
+  save_raw_per_inference: true
+  percentiles: [50, 90, 95, 99]
+
+selection:
+  default_method: "pareto"
+  maximize: [accuracy]
+  minimize: [median_latency_ms, peak_memory_mb, model_size_mb]
+  prohibit_test_set_tuning: true
+
+paths:
+  checkpoints: "models/checkpoints"
+  saved_models: "models/saved"
+  tflite: "models/tflite"
+  model_metadata: "models/metadata"
+  raw_benchmarks: "benchmark/raw"
+  processed_benchmarks: "benchmark/processed"
+  results: "results"

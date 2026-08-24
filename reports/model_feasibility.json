@@ -1,0 +1,65 @@
+{
+  "status": "FAIL",
+  "purpose": "one-batch full-backbone fine-tuning feasibility only; no accuracy claim",
+  "dataset_split": "grouped_capture_session_v1_gap90_seed42",
+  "gpu_report": {
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "python": "3.13.15",
+    "tensorflow": "2.21.0",
+    "physical_gpus": [
+      {
+        "name": "/physical_device:GPU:0",
+        "device_type": "GPU",
+        "compute_capability": [
+          7,
+          5
+        ],
+        "device_name": "NVIDIA GeForce GTX 1650"
+      }
+    ],
+    "nvidia_smi": "NVIDIA GeForce GTX 1650, 4096 MiB, 610.88",
+    "policy": "GPU_REQUIRED_ABORT_ON_CPU_FALLBACK"
+  },
+  "models": [
+    {
+      "model": "mobilenet_v2",
+      "status": "PASS",
+      "batch_size": 16,
+      "parameter_count": 2269513,
+      "trainable_variable_count": 54,
+      "output_shape": [
+        16,
+        9
+      ],
+      "output_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+      "smoke_loss_not_a_result": 3.1243486404418945,
+      "gpu_memory": {
+        "current": 54532608,
+        "peak": 1957238784
+      }
+    },
+    {
+      "model": "mobilenet_v3_small",
+      "status": "PASS",
+      "batch_size": 16,
+      "parameter_count": 944313,
+      "trainable_variable_count": 72,
+      "output_shape": [
+        16,
+        9
+      ],
+      "output_device": "/job:localhost/replica:0/task:0/device:GPU:0",
+      "smoke_loss_not_a_result": 2.4704489707946777,
+      "gpu_memory": {
+        "current": 42684672,
+        "peak": 1957238784
+      }
+    },
+    {
+      "model": "efficientnet_b0",
+      "status": "FAIL",
+      "error_type": "ResourceExhaustedError",
+      "error": "Exception encountered when calling Conv2D.call().\n\n\u001b[1m{{function_node __wrapped__Conv2D_device_/job:localhost/replica:0/task:0/device:GPU:0}} OOM when allocating tensor with shape[16,14,14,672] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:Conv2D]\u001b[0m\n\nArguments received by Conv2D.call():\n  \u2022 inputs=tf.Tensor(shape=(16, 14, 14, 112), dtype=float32)"
+    }
+  ]
+}

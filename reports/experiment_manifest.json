@@ -1,0 +1,217 @@
+{
+  "status": "EXPERIMENT_COMPLETE_SCIENTIFIC_PACKAGE_READY",
+  "finalized_utc": "2026-08-24T11:52:06.543055+00:00",
+  "random_seed": 42,
+  "dataset": {
+    "name": "DeepWeeds",
+    "archive_sha256": "0961f63c01b997bfab1559ad09e99c0e8130617fd96a8b92fdc09940e01b0ce8",
+    "split_protocol": "grouped_capture_session_v1_gap90_seed42",
+    "report": "reports/dataset_report.json",
+    "report_sha256": "4a916633786385b7aae621565cf939780aadd19b7001bc6d28c1e5e2b94355d7",
+    "split_counts": {
+      "train": 10506,
+      "validation": 3502,
+      "test": 3501
+    },
+    "manifest_hashes": {
+      "train": "a4dde73fa55605b36be21dd93abd2dd44d75c4b4d6413fd57eebbc6cc3596ab5",
+      "validation": "a7f732703fc69059c1678953dde46b608ff8cb91c136832137ddaedc39c76e2b",
+      "test": "567b554aac8cfe669a00451c121420b10f751e072c0c74ca2213ab31ed9dae86"
+    }
+  },
+  "gpu": {
+    "policy": "GPU_REQUIRED_ABORT_ON_CPU_FALLBACK",
+    "final_preflight": "environment/final_gpu_preflight_20260822.json",
+    "final_preflight_sha256": "08e5d6bfdb2a6174b6cc5bd45781662d6567707b2cc719fc86ffc606fcdb8462",
+    "tensorflow": "2.21.0",
+    "device": "NVIDIA GeForce GTX 1650, 4096 MiB, 610.88"
+  },
+  "calibration": {
+    "source": "training split only",
+    "sample_count": 800,
+    "npz": "data/calibration/deepweeds_train_stratified_seed42_n800.npz",
+    "npz_sha256": "a25ec305b1e86151794e9fd268fedc1e40feea23643d42e95286ce219d36788c"
+  },
+  "models": [
+    {
+      "architecture": "efficientnet_b0",
+      "keras_model": "models\\saved\\efficientnet_b0\\20260822T085034Z.keras",
+      "keras_sha256": "18a4af3a3e85fb5fb8a244181af102530642e482af23f57b42a537bbaa40f2b0",
+      "tflite_dir": "models\\tflite\\efficientnet_b0\\20260822T085034Z",
+      "parity_report": "reports\\efficientnet_b0_20260822T085034Z_quantization_summary.json",
+      "parity_report_sha256": "38e63f7908b6b8e21e2d68d629ae4c5f48ce44769e0899e6f1867bc37dde437d",
+      "verification_report": "reports\\efficientnet_b0_20260822T085034Z_tflite_verification.json",
+      "verification_report_sha256": "779daada57cdc27bb4964ddffca5e5b2bdbc6763ac6844b9eef49a2a167ce97d",
+      "validation_variants": {
+        "float32": {
+          "path": "models\\tflite\\efficientnet_b0\\20260822T085034Z\\efficientnet_b0_20260822T085034Z__float32.tflite",
+          "sha256": "4e7bf575be33b6f10e45f58a6f5b2aa4ac03b48b6e5b563369fa98b03d95d03a",
+          "size_bytes": 16115064,
+          "validation_accuracy": 0.797829811536265,
+          "top1_agreement_with_keras": 1.0
+        },
+        "float16": {
+          "path": "models\\tflite\\efficientnet_b0\\20260822T085034Z\\efficientnet_b0_20260822T085034Z__float16.tflite",
+          "sha256": "8b487a2559093bb4a7f986aa93665bf5c61d27c44c836376ec46bebc84d1bc8c",
+          "size_bytes": 8165448,
+          "validation_accuracy": 0.7986864648772131,
+          "top1_agreement_with_keras": 0.997430039977156
+        },
+        "dynamic_int8": {
+          "path": "models\\tflite\\efficientnet_b0\\20260822T085034Z\\efficientnet_b0_20260822T085034Z__dynamic_int8.tflite",
+          "sha256": "9d69d6ea033bbb5181ebf3fb5abb873a8c4407262e32f3bf25bf6bbe411052c9",
+          "size_bytes": 4592176,
+          "validation_accuracy": 0.7972587093089663,
+          "top1_agreement_with_keras": 0.9568817818389491
+        },
+        "full_int8": {
+          "path": "models\\tflite\\efficientnet_b0\\20260822T085034Z\\efficientnet_b0_20260822T085034Z__full_int8.tflite",
+          "sha256": "bf768dda79fe589885aa9c79820a478236c331901a921dec3f8de87c8219a214",
+          "size_bytes": 4953200,
+          "validation_accuracy": 0.7141633352370075,
+          "top1_agreement_with_keras": 0.7441462021701885
+        }
+      }
+    },
+    {
+      "architecture": "mobilenet_v2",
+      "keras_model": "models\\saved\\mobilenet_v2\\20260821T145425Z.keras",
+      "keras_sha256": "ad8a2baafe58f690bedee658092d2f1d7fb1869882576b9b7f74272fa48590b8",
+      "tflite_dir": "models\\tflite\\mobilenet_v2\\20260821T145425Z",
+      "parity_report": "reports\\mobilenet_v2_20260821T145425Z_quantization_summary.json",
+      "parity_report_sha256": "445243e466c7f34ac0889b70399ead908251cd16f117ecf13c42a71f1fb41860",
+      "verification_report": "reports\\mobilenet_v2_20260821T145425Z_tflite_verification.json",
+      "verification_report_sha256": "b7d900195d45c3da61fc5966fdfccd1ed477083a3d5789c5bf5087fb622d7f13",
+      "validation_variants": {
+        "float32": {
+          "path": "models\\tflite\\mobilenet_v2\\20260821T145425Z\\mobilenet_v2_20260821T145425Z__float32.tflite",
+          "sha256": "bec15e3963d46e241acd9c906831107e97b4c00b81c895257a4321545dcd738d",
+          "size_bytes": 8937820,
+          "validation_accuracy": 0.8406624785836665,
+          "top1_agreement_with_keras": 1.0
+        },
+        "float16": {
+          "path": "models\\tflite\\mobilenet_v2\\20260821T145425Z\\mobilenet_v2_20260821T145425Z__float16.tflite",
+          "sha256": "801130c48bc49023dd5481bab243c5909309bb5630b0b1d4594ca5ef1ab954dd",
+          "size_bytes": 4537556,
+          "validation_accuracy": 0.8398058252427184,
+          "top1_agreement_with_keras": 0.9951456310679612
+        },
+        "dynamic_int8": {
+          "path": "models\\tflite\\mobilenet_v2\\20260821T145425Z\\mobilenet_v2_20260821T145425Z__dynamic_int8.tflite",
+          "sha256": "97e33bb8b77f611d54bdce32a39c325b54b8d1d0b5a6d401adea5c5bbb182b8f",
+          "size_bytes": 2545400,
+          "validation_accuracy": 0.8326670474014849,
+          "top1_agreement_with_keras": 0.9663049685893775
+        },
+        "full_int8": {
+          "path": "models\\tflite\\mobilenet_v2\\20260821T145425Z\\mobilenet_v2_20260821T145425Z__full_int8.tflite",
+          "sha256": "0b1cdd47d0b7d94504c62d7160b431a69814006e3132b126ddc5b5bc97a4246d",
+          "size_bytes": 2748320,
+          "validation_accuracy": 0.826956025128498,
+          "top1_agreement_with_keras": 0.933466590519703
+        }
+      }
+    },
+    {
+      "architecture": "mobilenet_v3_small",
+      "keras_model": "models\\saved\\mobilenet_v3_small\\20260821T132810Z.keras",
+      "keras_sha256": "329cf2ff2ab5543697d2de5fdf5623d840a9c301abafb7be9675e39c09a89dad",
+      "tflite_dir": "models\\tflite\\mobilenet_v3_small\\20260821T132810Z_calib800",
+      "parity_report": "reports\\mobilenet_v3_small_20260821T132810Z_quantization_summary.json",
+      "parity_report_sha256": "d7695e88ce8830bc66cb022c6eccf7293bb123a3321c6e0e2811815ed728422d",
+      "verification_report": "reports\\mobilenet_v3_small_20260821T132810Z_calib800_flatbuffer_verification.json",
+      "verification_report_sha256": "b3e57538d2c338a78dfe3e1ac5ace88bbc4972ec3d812913b10b16bd5d7b9f0a",
+      "validation_variants": {
+        "float32": {
+          "path": "models\\tflite\\mobilenet_v3_small\\20260821T132810Z_calib800\\mobilenet_v3_small_20260821T132810Z__float32.tflite",
+          "sha256": "cf6183dcd31c9ec34724e8f68d15423dc09b0cf71b1e91ba37800321b7526ba4",
+          "size_bytes": 3782516,
+          "validation_accuracy": 0.7384351798972016,
+          "top1_agreement_with_keras": 1.0
+        },
+        "float16": {
+          "path": "models\\tflite\\mobilenet_v3_small\\20260821T132810Z_calib800\\mobilenet_v3_small_20260821T132810Z__float16.tflite",
+          "sha256": "201167c633c4c8714d7c84905e88fe159d76e9eff38c91b70708b1ced5a8bb00",
+          "size_bytes": 1967356,
+          "validation_accuracy": 0.7398629354654483,
+          "top1_agreement_with_keras": 0.9951456310679612
+        },
+        "dynamic_int8": {
+          "path": "models\\tflite\\mobilenet_v3_small\\20260821T132810Z_calib800\\mobilenet_v3_small_20260821T132810Z__dynamic_int8.tflite",
+          "sha256": "1c3ca9e08ab14de0d8e7ca58f127b9955ae2cf3e9ffaad5033952bcbb51dd82f",
+          "size_bytes": 1144288,
+          "validation_accuracy": 0.7535693889206168,
+          "top1_agreement_with_keras": 0.8737864077669902
+        },
+        "full_int8": {
+          "path": "models\\tflite\\mobilenet_v3_small\\20260821T132810Z_calib800\\mobilenet_v3_small_20260821T132810Z__full_int8.tflite",
+          "sha256": "7eb4e5feb3ad6a7ffe9c7d81f9f7b78d520a334323c091aaddccb8859c84991b",
+          "size_bytes": 1252008,
+          "validation_accuracy": 0.5588235294117647,
+          "top1_agreement_with_keras": 0.5062821245002855
+        }
+      }
+    }
+  ],
+  "android": {
+    "device_id": "realme_RMX3760_api35",
+    "protocol_version": "1.2.0",
+    "app_version": "1.2.0+3",
+    "app_manifest": "flutter_app/assets/benchmark_manifest.json",
+    "app_manifest_sha256": "5fb2fbc4ef3c507a92d2f029a411169d5f87a53cf016682c4f0762d16870c83a",
+    "release_apk_sha256": "dd462d33fb0e175e51f0b16f07bad14c1092e20a2a5a9519914ef9b07f3baf1b",
+    "raw_csv": "benchmark/raw/final_realme_RMX3760_protocol1_2_bounded_trials_1_2.csv",
+    "raw_csv_sha256": "5c129b5d6adfa10e3db3f4f66e118665470e89ceffd780d414dcc06483dd762b",
+    "benchmark_audit": "reports/final_benchmark_audit.json",
+    "benchmark_audit_sha256": "3209020a5edb2d0b17647458ee6109aefd52e75e2dfa3e9fbb1539d8d802a33b",
+    "successful_configurations": 69,
+    "failed_configurations": 3,
+    "measured_rows": 13800
+  },
+  "final_test": {
+    "evaluation_count": 1,
+    "manifest": "reports/final_test_manifest.json",
+    "manifest_sha256": "e6c4b49b8d7f1684f6c1d7036b957b5b4e08134394a5e01e34b5f3bc995d75e0",
+    "report": "results/final/final_test_report.json",
+    "report_sha256": "e6b45a22c223fff989978b4e19baab99c1d7858d078d9a45d6e1c856fc0a0656",
+    "predictions": "results/final/final_test_predictions.csv",
+    "predictions_sha256": "bd711a6f0f97182a01ead454dd60bcf305f301c9e1e328c6518e02e51a30be30"
+  },
+  "analysis": {
+    "summary": "results/final/analysis_summary.json",
+    "summary_sha256": "97b2418758e352e2856f4c9c8c6499f56803a91c9cc08208e87b4c4530882e63",
+    "pareto_selection_uses_validation_not_test": true
+  },
+  "publication_supplement": {
+    "manifest": "results/final/publication_supplement/supplement_manifest.json",
+    "manifest_sha256": "9fb7a8aeabd9b5f0e631012383f7e82e1ad2bf700810b7d3f3f02038426ab226",
+    "table_count": 9,
+    "figure_pdf_count": 7
+  },
+  "excluded_failed_runs": [
+    {
+      "path": "benchmark/failed_runs/protocol_1_1_anr_20260822/failure_report.json",
+      "sha256": "25d57225e46fc2f4b3e852ca3ea56f17a9a70b22d657c093bd92081103eda23f",
+      "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_ANALYSIS"
+    },
+    {
+      "path": "benchmark/failed_runs/protocol_1_2_watermark_pressure_20260822/failure_report.json",
+      "sha256": "8fbc3d9dd076cba201fab1deb0da89bb2d46aa3ee4165f01bc0f4e98a0245556",
+      "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_ANALYSIS"
+    },
+    {
+      "path": "benchmark/failed_runs/protocol_1_2_foreground_loss_20260822/failure_report.json",
+      "sha256": "32fc0c64ca8fb6d1435f4178ca9412ac9c55b6a7998cce1acdb940fbcf79d39e",
+      "status": "FAILED_INCOMPLETE_EXCLUDED_FROM_ANALYSIS"
+    }
+  ],
+  "provenance": {
+    "path": "research_integrity/result_provenance.csv",
+    "sha256": "29962e4e6dfddf48ab038e0255bd4d48eecd745d38159d2e8414a90f744e88fe",
+    "rows": 118
+  },
+  "novelty_position": "FINAL_RECHECK_COMPLETE_REPLICATION_EXTENSION_FRAMING",
+  "clarivate_scie_directly_verified": false,
+  "git_commit": "NOT_AVAILABLE_WORKSPACE_ROOT_NOT_A_GIT_REPOSITORY"
+}

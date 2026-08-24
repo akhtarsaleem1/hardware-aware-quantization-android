@@ -1,0 +1,37 @@
+{
+  "profile_status": "benchmark_pilot_validated_20260822",
+  "device_id": "realme_RMX3760_api35",
+  "manufacturer": "realme",
+  "model": "RMX3760",
+  "android_version": "15",
+  "api_level": 35,
+  "build_fingerprint": "realme/RMX3760/RE58C2:15/AP3A.240905.015.A2/T.R4T2.1784276839:user/release-keys",
+  "soc_manufacturer": "Spreadtrum",
+  "soc_model": "UMS9230H",
+  "board_platform": "ums9230",
+  "cpu_cores_online": 8,
+  "abis": ["arm64-v8a", "armeabi-v7a", "armeabi"],
+  "ram_total_kb": 5905892,
+  "screen_physical_pixels": "720x1600",
+  "gpu_name": "ARM Mali-G57",
+  "gpu_api": "OpenGL ES 3.2",
+  "gpu_driver": "v1.r49p1-04eac0.c82d7dfafb554e451d70465a9a21fa98",
+  "thermal_hal_available": true,
+  "nnapi_status": "legacy feature-level-7 properties present; neuralnetworks service not listable; not benchmarked",
+  "benchmarked_runtimes": ["builtin_cpu", "explicit_xnnpack_cpu"],
+  "runtime_limitations": [
+    "NNAPI excluded because effective execution could not be verified on Android 15",
+    "MobileNetV3-Small full INT8 failed explicit XNNPACK allocation at 1, 2, and 4 threads"
+  ],
+  "pilot": {
+    "raw_file": "benchmark/pilot/mobilenet_v3_device_stability_pilot_partial.csv",
+    "raw_sha256": "e12e88427783a3fbadc1159904e95725ed8469f2f7ffbd305d57f9666640b31e",
+    "valid_measured_rows": 1594,
+    "configuration_error_rows": 3,
+    "apk_sha256": "6241bfdc0a77cfb2a8c02ac00a69af51f65b2972f14c7af1f0ea624df2790649",
+    "charging_state": "charging",
+    "battery_percent_range": [45.0, 46.0],
+    "battery_temperature_c_range": [42.6, 44.9]
+  },
+  "notes": "All values are direct ADB/app observations. GPU core count and NPU identity are not inferred."
+}

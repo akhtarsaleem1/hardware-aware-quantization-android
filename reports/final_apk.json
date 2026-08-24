@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "path": "flutter_app/build/app/outputs/flutter-apk/app-release.apk",
+  "size_bytes": 132873947,
+  "sha256": "dd462d33fb0e175e51f0b16f07bad14c1092e20a2a5a9519914ef9b07f3baf1b",
+  "build_mode": "release",
+  "dart_defines": {
+    "AUTO_BENCHMARK": true
+  },
+  "app_version_name": "1.2.0",
+  "app_version_code": 3,
+  "protocol_version": "1.2.0",
+  "benchmark_manifest_sha256": "5fb2fbc4ef3c507a92d2f029a411169d5f87a53cf016682c4f0762d16870c83a",
+  "benchmark_worker": "background_dart_isolate_with_transferred_flatbuffers_and_background_binary_messenger",
+  "excluded_predecessor_run": "benchmark/failed_runs/protocol_1_1_anr_20260822/failure_report.json",
+  "installed_device": "realme_RMX3760_api35",
+  "adb_serial": "0H73C15I22100932",
+  "install_result": "Success"
+}

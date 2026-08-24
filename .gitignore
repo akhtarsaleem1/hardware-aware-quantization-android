@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Public data are reacquired from the authoritative source.
+data/source/
+data/manifests/
+data/manifests_grouped/
+
+# Generated models and experiment outputs.
+models/checkpoints/
+models/saved/
+models/tflite/
+models/metadata/
+benchmark/raw/
+benchmark/processed/
+results/raw/
+results/processed/
+results/tables/
+results/figures/
+results/statistics/
+# Local working state and release artifacts excluded from GitHub.
+tmp/
+.idea/
+.dart_tool/
+flutter_app/.dart_tool/
+flutter_app/build/
+flutter_app/android/.gradle/
+flutter_app/android/local.properties
+flutter_app/android/key.properties
+*.jks
+*.keystore
+data/calibration/*.npz
+publication/*.zip
+paper/manuscript_main.unscrubbed.docx
