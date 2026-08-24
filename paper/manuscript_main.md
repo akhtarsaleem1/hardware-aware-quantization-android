@@ -8,7 +8,7 @@ author:
     corresponding: true
 journal: "Journal of Systems Architecture"
 date: "24 August 2026"
-artifact_doi: "https://doi.org/10.5281/zenodo.22080295"
+artifact_doi: "https://doi.org/10.5281/zenodo.22082237"
 bibliography: references.bib
 csl: ""
 ---
@@ -422,7 +422,7 @@ repository. Frozen split manifests, hashes, validation reports, raw benchmark
 observations, final per-sample predictions, and derived tables are included in
 the accompanying artifact package. Redistribution of source images follows the
 dataset license. A Zenodo record has been reserved for the reproducibility
-artifact at https://doi.org/10.5281/zenodo.22080295 and will be made public
+artifact at https://doi.org/10.5281/zenodo.22082237 and will be made public
 before manuscript submission.
 
 ## Code availability
@@ -431,7 +431,7 @@ Training, conversion, parity evaluation, Android benchmarking, locked-test
 evaluation, statistical analysis, and figure-generation code are included in
 the reproducibility artifact. Environment reports and SHA-256 provenance
 records link executed outputs to their source models and data. The reserved
-artifact DOI is https://doi.org/10.5281/zenodo.22080295; the Zenodo record will
+artifact DOI is https://doi.org/10.5281/zenodo.22082237; the Zenodo record will
 be made public before manuscript submission.
 
 # References

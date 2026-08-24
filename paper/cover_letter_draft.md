@@ -15,7 +15,7 @@ The locked 3,501-image evaluation produced 53.93%-84.43% accuracy. The fastest m
 
 The work fits the journal's published scope in embedded/mobile systems and software/system architecture by examining how deployable model artifacts interact with runtime kernels, delegates, threading, and measurement design. We make no unverified claim about Clarivate indexing; that administrative check remains separate from the scientific submission package.
 
-This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. A Zenodo record has been reserved at https://doi.org/10.5281/zenodo.22080295 and will be made public before manuscript submission.
+This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. A Zenodo record has been reserved at https://doi.org/10.5281/zenodo.22082237 and will be made public before manuscript submission.
 
 Sincerely,
 

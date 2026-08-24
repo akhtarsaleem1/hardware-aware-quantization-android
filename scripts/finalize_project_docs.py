@@ -134,7 +134,7 @@ artifact.
 Prepared for submission to the Journal of Systems Architecture. Author,
 affiliation, corresponding email, funding/conflict declarations, sole-author
 approval, and the reserved Zenodo DOI are populated. The Zenodo record at
-https://doi.org/10.5281/zenodo.22080295 must be published before journal upload.
+https://doi.org/10.5281/zenodo.22082237 must be published before journal upload.
 No SCI/SCIE indexing claim is made; verify the live Master Journal List and the
 current Guide for Authors immediately before submission.
 

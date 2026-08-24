@@ -70,7 +70,7 @@ The locked 3,501-image evaluation produced {pct(models['accuracy'].min())}-{pct(
 
 The work fits the journal's published scope in embedded/mobile systems and software/system architecture by examining how deployable model artifacts interact with runtime kernels, delegates, threading, and measurement design. We make no unverified claim about Clarivate indexing; that administrative check remains separate from the scientific submission package.
 
-This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. A Zenodo record has been reserved at https://doi.org/10.5281/zenodo.22080295 and will be made public before manuscript submission.
+This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. A Zenodo record has been reserved at https://doi.org/10.5281/zenodo.22082237 and will be made public before manuscript submission.
 
 Sincerely,
 
@@ -95,13 +95,13 @@ Scientific package version: protocol 1.2.0; app 1.2.0+3; one locked-test session
 
     data = f"""# Data availability
 
-DeepWeeds is available under CC BY 4.0 from its official repository. The submission artifact contains the frozen capture-session-grouped manifests and hashes, training-only calibration indices, validation/parity reports, the balanced protocol-1.2 trials 1-2 Android CSV (SHA-256 `{audit['raw_csv_sha256']}`) plus immutable provenance for the incomplete source run, the locked-test per-sample prediction CSV and aggregate JSON, derived tables, and publication figures. Source images are not duplicated beyond what the DeepWeeds license and submission venue permit. A Zenodo record has been reserved for the reproducibility artifact at https://doi.org/10.5281/zenodo.22080295 and will be made public before manuscript submission.
+DeepWeeds is available under CC BY 4.0 from its official repository. The submission artifact contains the frozen capture-session-grouped manifests and hashes, training-only calibration indices, validation/parity reports, the balanced protocol-1.2 trials 1-2 Android CSV (SHA-256 `{audit['raw_csv_sha256']}`) plus immutable provenance for the incomplete source run, the locked-test per-sample prediction CSV and aggregate JSON, derived tables, and publication figures. Source images are not duplicated beyond what the DeepWeeds license and submission venue permit. A Zenodo record has been reserved for the reproducibility artifact at https://doi.org/10.5281/zenodo.22082237 and will be made public before manuscript submission.
 """
     (root / "paper/data_availability.md").write_text(data, encoding="utf-8")
 
     code = """# Code availability
 
-The artifact package includes dataset validation and grouped splitting, GPU-fail-closed training, post-training conversion, parity and flatbuffer checks, Flutter local inference and release benchmarking, independent raw-run audit, pretest Pareto selection, one-shot locked-test evaluation, statistical analysis, figure generation, manuscript population, and publication-readiness verification. Exact environment reports, APK/model/data hashes, and protocol files are included. The reproducibility artifact has the reserved Zenodo DOI https://doi.org/10.5281/zenodo.22080295; the record will be made public before manuscript submission.
+The artifact package includes dataset validation and grouped splitting, GPU-fail-closed training, post-training conversion, parity and flatbuffer checks, Flutter local inference and release benchmarking, independent raw-run audit, pretest Pareto selection, one-shot locked-test evaluation, statistical analysis, figure generation, manuscript population, and publication-readiness verification. Exact environment reports, APK/model/data hashes, and protocol files are included. The reproducibility artifact has the reserved Zenodo DOI https://doi.org/10.5281/zenodo.22082237; the record will be made public before manuscript submission.
 """
     (root / "paper/code_availability.md").write_text(code, encoding="utf-8")
 

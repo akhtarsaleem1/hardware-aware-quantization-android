@@ -123,14 +123,14 @@ def main() -> None:
         "source_images_included": False,
         "redundant_training_checkpoints_included": False,
         "journal_archive": {
-            "path": str(journal_zip.relative_to(root)),
+            "path": journal_zip.relative_to(root).as_posix(),
             "sha256": sha256(journal_zip),
             "bytes": journal_zip.stat().st_size,
             "file_count": len(journal_records),
             "files": journal_records,
         },
         "reproducibility_archive": {
-            "path": str(artifact_zip.relative_to(root)),
+            "path": artifact_zip.relative_to(root).as_posix(),
             "sha256": sha256(artifact_zip),
             "bytes": artifact_zip.stat().st_size,
             "file_count": len(artifact_records),
