@@ -39,11 +39,11 @@ def main() -> None:
     fastest_p95 = configs.loc[configs["trial_p95_mean_ms"].idxmin()]
 
     highlights = [
-        "A hash-linked Android protocol compares 12 LiteRT variants in 72 settings.",
-        "Complete trials retain median, p95, rank stability, memory, and failures.",
-        f"Size and latency orders differed in {int(evidence['H1_size_vs_latency_rank_mismatch_contexts'])} of {int(evidence['H1_total_contexts'])} contexts.",
-        f"Runtime changed quantization rank in {int(evidence['H2_runtime_rank_change_contexts'])} of {int(evidence['H2_total_comparable_contexts'])} contexts.",
-        f"Median and p95 Pareto fronts shared {len(median_front & p95_front)} configurations.",
+        "The Android protocol compares 12 model variants across 72 deployment settings.",
+        "Complete trials retain typical and tail latency, memory, and failures.",
+        f"Model size and device latency rankings differed in all {int(evidence['H1_total_contexts'])} contexts.",
+        f"Runtime choice changed quantization rankings in {int(evidence['H2_runtime_rank_change_contexts'])} of {int(evidence['H2_total_comparable_contexts'])} comparisons.",
+        f"Typical- and tail-latency Pareto fronts shared only {len(median_front & p95_front)} configurations.",
     ]
     too_long = [value for value in highlights if len(value) > 85]
     if too_long:
@@ -64,13 +64,13 @@ Dear Editor,
 
 Please consider my original research manuscript, **“Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android,”** for publication in the *Journal of Systems Architecture*.
 
-The manuscript presents an auditable, system-level study of 12 deployable LiteRT flatbuffers across 72 planned model/runtime/thread configurations on a lower-cost Android 15 phone. A post hoc bounded analysis retains two complete balanced trials after the incomplete third trial was excluded wholesale, so the Android evidence is explicitly exploratory rather than confirmatory. The contribution is deliberately narrower than another application comparison: it focuses on capture-session leakage control, a test split held closed until device selection was frozen, immutable per-inference observations, complete randomized trials, p95/p99 latency, rank stability, memory and thermal context, and explicit preservation of delegate/configuration failures.
+The manuscript reports an auditable systems study of 12 deployable LiteRT flatbuffers across 72 planned model, runtime, and thread configurations on a lower-cost Android 15 phone. Because trial 3 was incomplete, it was excluded in full and the bounded analysis uses only the two complete balanced trials. The Android evidence is therefore explicitly exploratory. Rather than presenting another application-level comparison, the paper examines capture-session leakage control, a test split held closed until device selection was frozen, immutable per-inference records, randomized complete trials, p95/p99 latency, rank stability, memory and thermal context, and preserved delegate/configuration failures.
 
-The locked 3,501-image evaluation produced {pct(models['accuracy'].min())}-{pct(models['accuracy'].max())} accuracy. The fastest mean trial median and p95 were {float(fastest_median['trial_median_mean_ms']):.2f} ms and {float(fastest_p95['trial_p95_mean_ms']):.2f} ms. File-size and median-latency order differed in {int(evidence['H1_size_vs_latency_rank_mismatch_contexts'])}/{int(evidence['H1_total_contexts'])} contexts, runtime changed quantization rank in {int(evidence['H2_runtime_rank_change_contexts'])}/{int(evidence['H2_total_comparable_contexts'])} comparisons, and median versus p95 criteria changed the Pareto frontier. {int(audit['failed_configurations'])} failed configurations were retained as evidence rather than replaced with fallback measurements.
+The locked 3,501-image evaluation produced {pct(models['accuracy'].min())}-{pct(models['accuracy'].max())} accuracy. The best mean trial median was {float(fastest_median['trial_median_mean_ms']):.2f} ms, and the best mean trial p95 was {float(fastest_p95['trial_p95_mean_ms']):.2f} ms; they came from different thread settings. File-size and median-latency order differed in all {int(evidence['H1_total_contexts'])} contexts, runtime changed quantization rank in {int(evidence['H2_runtime_rank_change_contexts'])} of {int(evidence['H2_total_comparable_contexts'])} comparisons, and median versus p95 criteria changed the Pareto frontier. The benchmark retained {int(audit['failed_configurations'])} failed configurations as evidence rather than replacing them with fallback measurements.
 
-The work fits the journal's published scope in embedded/mobile systems and software/system architecture by examining how deployable model artifacts interact with runtime kernels, delegates, threading, and measurement design. I make no unverified claim about Clarivate indexing; that administrative check remains separate from the scientific submission package.
+The paper fits the journal's scope because it treats quantization as a systems problem. Deployable model artifacts are evaluated together with runtime kernels, delegate behavior, threading, and measurement design on real hardware.
 
-This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. The v1.0.0 reproducibility artifact is publicly available at https://doi.org/10.5281/zenodo.22082237.
+This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding, conflict-of-interest, authorship, and AI-assistance declarations are included in the manuscript. The accompanying artifact contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and the record of an excluded incomplete ANR run. The v1.0.0 reproducibility artifact is publicly available at https://doi.org/10.5281/zenodo.22082237. I reviewed the final content and take responsibility for the work.
 
 Sincerely,
 

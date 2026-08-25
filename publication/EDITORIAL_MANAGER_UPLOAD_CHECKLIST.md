@@ -29,6 +29,7 @@ The PDF is the author-side verified rendering. Upload the DOCX as the primary ma
 - Paste the abstract and keywords exactly as written in the manuscript.
 - Confirm Akhtar Saleem is marked as the corresponding author because this is a sole-author paper.
 - Enter the funding and conflict statements above.
+- If the portal asks about generative AI, answer **Yes** and use the declaration included immediately before the manuscript references.
 - Link the Zenodo record as data/software supporting the manuscript.
 - Ensure the Zenodo “Related works” field does not contain a self-reference to `10.5281/zenodo.22082237`.
 - Preview the system-generated submission PDF and inspect every page before approving it.

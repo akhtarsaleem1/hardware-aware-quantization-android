@@ -1,7 +1,7 @@
 # Highlights
 
-- A hash-linked Android protocol compares 12 LiteRT variants in 72 settings.
-- Complete trials retain median, p95, rank stability, memory, and failures.
-- Size and latency orders differed in 18 of 18 contexts.
-- Runtime changed quantization rank in 7 of 9 contexts.
-- Median and p95 Pareto fronts shared 3 configurations.
+- The Android protocol compares 12 model variants across 72 deployment settings.
+- Complete trials retain typical and tail latency, memory, and failures.
+- Model size and device latency rankings differed in all 18 contexts.
+- Runtime choice changed quantization rankings in 7 of 9 comparisons.
+- Typical- and tail-latency Pareto fronts shared only 3 configurations.

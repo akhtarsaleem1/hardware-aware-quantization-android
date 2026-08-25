@@ -15,26 +15,30 @@ csl: ""
 
 # Abstract
 
-Post-training quantization reduces neural-network storage, but its effect on
-realized mobile latency depends on model operators, runtime kernels, delegate
-behavior, and threading. This study evaluates MobileNetV2, MobileNetV3-Small,
-and EfficientNet-B0 in FP32, FP16, dynamic-range INT8, and full INT8 form on a
-lower-cost Android 15 phone. We use a leakage-audited, capture-session-grouped
-DeepWeeds split; GPU-controlled transfer learning; training-only calibration;
-locked-test classification metrics; and a release-mode LiteRT experiment that
-planned three randomized complete trials, 20 warm-ups, and 100 timed invocations
-per successful configuration. The run became incomplete during trial 3; trial 3
-was excluded wholesale, and the post hoc bounded analysis retains the two
-complete balanced trials only. The Android evidence is therefore exploratory
-rather than confirmatory. Unlike average-only comparisons, the protocol
-retains immutable per-inference observations, configuration errors, process
-memory snapshots, battery and thermal context, requested and observed runtime
-state, median and tail latency, trial-level uncertainty, and quantization rank
-stability. Locked-test accuracy ranged from 53.93% to 84.43% and artifacts from 1.09 to 15.37 MiB; the fastest mean trial median and p95 were 146.77 ms (mobilenet_v3_small_full_int8__builtin_cpu__4t) and 162.34 ms (mobilenet_v3_small_full_int8__builtin_cpu__2t), respectively. Trial-pair rank correlations had minimum -1.000 and median 0.900; 3 configurations produced 6 preserved error rows. Median- and p95-based Pareto fronts contained 7 and 6 configurations, with 3 shared. The findings demonstrate that compression did not guarantee lower latency and that runtime and tail criteria changed configuration ranking on the tested realme RMX3760; they do not
-support generalization to other devices. All configuration choices were frozen
-before a single test-set evaluation, and hashes link models, raw observations,
-predictions, tables, and figures.
+Post-training quantization reduces storage, but a smaller model is not
+necessarily faster on a phone. Realized latency also depends on operators,
+runtime kernels, delegate behavior, and threading. We evaluated MobileNetV2,
+MobileNetV3-Small, and EfficientNet-B0 in FP32, FP16, dynamic-range INT8, and
+full INT8 form on a lower-cost Android 15 device. The protocol used a
+capture-session-grouped DeepWeeds split, training-only calibration, locked-test
+classification, and a release-mode LiteRT benchmark. Each successful
+configuration was scheduled for three randomized trials with 20 warm-ups and
+100 timed invocations. Trial 3 was incomplete and excluded in full; the
+analysis therefore uses the two complete balanced trials and is exploratory.
 
+The 12 deployable flatbuffers achieved 53.93%-84.43% locked-test accuracy and
+occupied 1.09-15.37 MiB. The best mean trial median was 146.77 ms, whereas the
+best mean trial p95 was 162.34 ms; the two values came from different thread
+settings. Trial-pair rank correlations ranged from -1.000 to 1.000 (median
+0.900). Three configurations failed and were retained as six explicit error
+rows. Artifact-size and median-latency rankings differed in all 18 comparable
+contexts. Runtime changed quantization order in 7 of 9 comparisons, and the
+median- and p95-based Pareto fronts shared only 3 configurations. Compression
+alone therefore did not determine performance on the tested realme RMX3760.
+Runtime choice, tail latency, conversion quality, and configuration failures
+all affected the practical ranking. All choices were frozen before the test
+set was opened, and hashes link models, observations, predictions, tables, and
+figures.
 **Keywords:** Android; LiteRT; TensorFlow Lite; post-training quantization;
 mobile inference; tail latency; repeatability; Pareto analysis
 
@@ -78,22 +82,21 @@ selection, or Pareto optimization. Its narrower contribution is an auditable
 distributional protocol for ordinary deployable LiteRT variants on a
 lower-cost consumer phone:
 
-1. leakage-audited model development with a test split that remains unopened
-   until every conversion and device configuration decision is frozen;
-2. immutable per-inference latency observations from randomized complete
-   trials, including p95/p99 behavior and trial-level uncertainty;
-3. explicit retention of conversion and configuration failures rather than
-   silent substitution or imputation; and
-4. sensitivity of configuration selection to median versus p95 latency,
-   artifact size, classification quality, and rank stability.
+1. leakage-audited development with test data closed until all choices are
+   frozen;
+2. immutable per-inference records from complete trials, including tail latency
+   and trial uncertainty;
+3. conversion and configuration failures retained without fallback; and
+4. selection sensitivity to median or p95 latency, size, quality, and rank
+   stability.
 
-The study addresses six questions: how standard post-training variants change
-classification performance and size (RQ1); how precision, runtime, and threads
-interact in median and tail latency (RQ2); whether rankings persist across
-complete trials and recorded thermal contexts (RQ3); whether size and latency
-ranks agree (RQ4); which configurations are Pareto-efficient under median and
-p95 criteria (RQ5); and which conversion or runtime failures prevent nominally
-desirable configurations from operating (RQ6).
+The study addresses six research questions. RQ1 measures how standard
+post-training variants change classification performance and size. RQ2
+examines how precision, runtime, and thread count interact in median and tail
+latency. RQ3 tests whether rankings persist across complete trials and recorded
+thermal contexts. RQ4 compares size and latency ranks, RQ5 identifies
+Pareto-efficient configurations under median and p95 criteria, and RQ6 records
+conversion or runtime failures that prevent configurations from operating.
 
 # 2. Related work
 
@@ -229,10 +232,16 @@ and an ARM Mali-G57 GPU. Values were read from Android system properties, ADB,
 and the app; unavailable GPU core count and NPU identity were not inferred.
 
 The release-mode Flutter application bundles the exact hashed flatbuffers and
-serves two purposes. Its inference screen selects a bundled configuration,
-loads an image from camera or gallery, center-crops and resizes to 224 × 224,
-executes locally, and reports predicted class, confidence, timed inference, and
-artifact size with a research-only warning. Its experiment screen runs the frozen randomized benchmark in a background Dart isolate, with frozen flatbuffers transferred from the root isolate, and writes an immutable CSV to app-specific external storage. This keeps the UI responsive without changing the interpreter-only timed region.
+serves two purposes. The inference screen loads an image from the camera or
+gallery, center-crops and resizes it to 224 x 224, runs a selected model locally,
+and reports the predicted class, confidence, inference time, and artifact size.
+It also displays a research-only warning.
+
+The experiment screen runs the frozen randomized benchmark in a background
+Dart isolate. Flatbuffers are transferred from the root isolate, and results
+are written to an immutable CSV in app-specific external storage. This design
+keeps the interface responsive without changing the interpreter-only timed
+region.
 
 Android 15 deprecates NNAPI, the phone did not expose a listable neural-networks
 service, and effective NNAPI execution could not be verified; NNAPI was
@@ -253,11 +262,11 @@ tensor, 20 untimed warm-ups, and 100 interpreter-only timed invocations in each
 of three planned complete trials. The run became incomplete during trial 3, so
 trial 3 was excluded wholesale and the post hoc bounded analysis retained the
 two complete balanced trials only. Accordingly, the Android evidence is
-exploratory rather than confirmatory. Configuration order was reshuffled within
-every trial using seed 42. The screen remained on; USB charging state, battery saver,
-thermal status, battery temperature, process proportional set size (PSS), and
-resident set size (RSS) were recorded. Background applications were not
-injected, but their absence could not be fully verified.
+exploratory rather than confirmatory. Configuration order was reshuffled within every trial using seed 42. The screen
+remained on throughout the run. USB charging state, battery saver, thermal
+status, battery temperature, process proportional set size (PSS), and resident
+set size (RSS) were recorded. Background applications were not injected, but
+their absence could not be fully verified.
 
 The benchmark stores one row per timed invocation plus one explicit row for
 each configuration error. Rows contain model and protocol hashes, architecture,
@@ -274,14 +283,14 @@ Systems outcomes are artifact size, median, p90, p95 and p99 latency, latency
 coefficient of variation, model-load time, process PSS/RSS, configuration error
 count, and recorded thermal context.
 
-The complete randomized trial - not each invocation - is the experimental unit for
-uncertainty. Per-inference rows determine distributional quantiles. For every
-successful configuration we report the mean and standard deviation of the two
-complete-trial medians and trial p95 values, plus a deterministic nonparametric
-95% bootstrap interval obtained by resampling the two complete-trial summaries
-(20,000 resamples). Because only two trials and one physical device
-are available, these intervals describe run repeatability and must not be
-interpreted as population-level device confidence intervals.
+The complete randomized trial - not each invocation - is the experimental unit
+for uncertainty. Per-inference rows determine distributional quantiles. For
+each successful configuration, we report the mean and standard deviation of
+the two complete-trial medians and trial p95 values. We also report a
+deterministic nonparametric 95% bootstrap interval obtained by resampling the
+two complete-trial summaries 20,000 times. With only two trials on one physical
+device, these intervals describe run repeatability rather than population-level
+device uncertainty.
 
 Within each architecture/runtime/thread context, quantization ranks from each
 pair of complete trials are compared with Spearman correlation. Pareto fronts
@@ -291,11 +300,26 @@ dominated only when another is no worse on every objective and strictly better
 on at least one. The test set supplies final reporting quality, but all model
 and configuration candidates entering this analysis were frozen beforehand.
 
+## 3.8 AI-assisted development and author oversight
+
+OpenAI Codex was used as a supportive tool for language refinement, manuscript
+organization, and assistance with developing and checking analysis and
+documentation code. AI-generated text or suggestions were not treated as
+experimental evidence. Reported values come from executed scripts and retained
+records, including raw observations, hashes, and independent verification
+reports. The author retained control over study decisions, reviewed the final
+analysis and interpretation, and accepts responsibility for the work.
+
 # 4. Results
 
 ## 4.1 Training, conversion, and locked-test classification
 
-All 12 frozen flatbuffers completed the locked 3,501-image evaluation. Test accuracy ranged from 53.93% (mobilenet_v3_small full_int8) to 84.43% (mobilenet_v2 float32); the highest macro F1 was 82.05% for mobilenet_v2 float32. Artifact size ranged from 1.09 to 15.37 MiB. The low MobileNetV3-Small full-INT8 validation parity was retained before test opening and remained visible in the locked-test table rather than being removed post hoc.
+All 12 frozen flatbuffers completed the locked 3,501-image evaluation. Test
+accuracy ranged from 53.93% for MobileNetV3-Small full INT8 to 84.43% for
+MobileNetV2 FP32. MobileNetV2 FP32 also achieved the highest macro F1, at
+82.05%. Artifact sizes ranged from 1.09 to 15.37 MiB. MobileNetV3-Small full
+INT8 had poor validation parity, but it was retained before the test set was
+opened and remains visible in Table 1 rather than being removed post hoc.
 
 **Table 1. Classification quality, size, validation gating, and artifact identity for every frozen TFLite variant.**
 
@@ -322,7 +346,12 @@ Keras references and complete per-class metrics/confusion matrices remain in the
 
 The device run contained 13,800 timed observations from 69 successful configurations and 6 explicit error rows representing 3 failed configurations. The fastest mean trial-median latency was 146.77 ms for mobilenet_v3_small_full_int8__builtin_cpu__4t; the fastest mean trial-p95 latency was 162.34 ms for mobilenet_v3_small_full_int8__builtin_cpu__2t. Across successful configurations, median process PSS snapshots ranged from 397.89 to 673.59 MiB and RSS snapshots ranged from 423.51 to 628.88 MiB.
 
-The preserved failed configurations were: mobilenet_v3_small_full_int8/xnnpack_cpu/1t (2/3 trials: Bad state: failed precondition); mobilenet_v3_small_full_int8/xnnpack_cpu/2t (2/3 trials: Bad state: failed precondition); mobilenet_v3_small_full_int8/xnnpack_cpu/4t (2/3 trials: Bad state: failed precondition). Battery temperature ranged from 41.0 to 46.1 °C, with charging states charging, full. Because USB power remained connected and the preferred ≤35 °C start condition was not met, these observations are not described as a cold or thermally controlled run.
+All three failed configurations used MobileNetV3-Small full INT8 with XNNPACK:
+1, 2, and 4 threads. Each setting produced `Bad state: failed precondition` in
+two of the three planned trials. Battery temperature ranged from 41.0 to 46.1
+°C, and the charging state was either charging or full. Because USB power
+remained connected and the preferred ≤35 °C start condition was not met, these
+observations are not described as a cold or thermally controlled run.
 
 **Table 2. Runtime/thread summary across successful model-quantization configurations. Brackets give the observed configuration range; the complete 72-configuration ledger is Supplementary Table 5.**
 
@@ -353,11 +382,28 @@ The validation-quality/size/latency Pareto analysis identified 7 median-based an
 
 # 5. Discussion
 
-The results separate artifact compression from realized execution. H1 was supported descriptively: size order and median-latency order disagreed in 18/18 contexts. H2 was supported descriptively: runtime changed the quantization ordering in 7/9 comparisons. These reversals are consistent with operator coverage, data conversion, memory access, and runtime-kernel differences, but the logs do not identify a single causal mechanism.
+The results separate artifact compression from realized execution. Size and
+median-latency order disagreed in every context (18/18), addressing H1. Runtime
+changed quantization order in 7 of 9 comparisons, addressing H2. Operator
+coverage, data conversion, memory access, and runtime-kernel differences are
+plausible explanations, but the retained logs do not isolate a single cause.
 
-H3 was supported descriptively: 29 INT8 configuration rows were outside the median-based Pareto front, so an unconditional “always INT8” rule would retain choices dominated under the frozen validation/size/device evidence. The poor MobileNetV3-Small full-INT8 parity and its XNNPACK configuration failures show why integer-only conversion success is not equivalent to an accurate, executable deployment [@P01; @P09; @P29]. This agrees with the broader Android finding that quantization outcomes depend on model and execution path [@P33].
+The results for H3 also argue against a simple precision rule. Twenty-nine INT8
+configuration rows were outside the median-based Pareto front. An unconditional
+"always INT8" policy would therefore retain choices dominated on the frozen
+validation quality, artifact size, and device latency objectives. The poor
+MobileNetV3-Small full-INT8 parity and its XNNPACK failures show why successful
+integer-only conversion does not guarantee an accurate, executable deployment
+[@P01; @P09; @P29]. This agrees with the broader Android finding that
+quantization outcomes depend on both model and execution path [@P33].
 
-For H4, the median trial-level CV was builtin_cpu=0.0052, xnnpack_cpu=0.0078, a max/min ratio of 1.51. These descriptive differences and the median-versus-p95 frontier change are consistent with H4, but 2 complete trials on one device are insufficient for a population-level significance claim. Tail summaries therefore add decision information without converting repeated invocations into pseudo-replicates.
+Trial-level variability was modest but not identical across runtimes. The
+median coefficient of variation was 0.0052 for the built-in CPU and 0.0078 for
+XNNPACK, a ratio of 1.51. Together with the change between median- and p95-based
+frontiers, this addresses H4 descriptively. Two complete trials on one device
+are not enough for a population-level significance claim. Tail summaries add
+useful decision information without treating repeated invocations as
+independent replicates.
 
 Protocol 1.1 produced an incomplete ANR-terminated run when synchronous LiteRT calls occupied Flutter's UI isolate. That raw file was hashed, preserved, and categorically excluded. Protocol 1.2 transferred the frozen flatbuffers to a background Dart isolate and restarted all trials from the beginning. This correction is part of the failure provenance, not a pooled pilot observation.
 
@@ -365,10 +411,10 @@ Protocol 1.1 produced an incomplete ANR-terminated run when synchronous LiteRT c
 
 Only one physical Android phone was tested, so the study cannot estimate
 between-device variability or claim transfer to other SoCs, Android releases,
-LiteRT builds, or vendor kernels. Two complete balanced trials provide only a
-limited description of short-run repeatability and imprecise trial-level
-uncertainty; the planned third trial was excluded wholesale after the run became
-incomplete, so the Android analysis is exploratory rather than confirmatory.
+LiteRT builds, or vendor kernels. Two complete balanced trials provide only a limited description of short-run
+repeatability, and trial-level uncertainty remains imprecise. The planned third
+trial was excluded in full after the run became incomplete. The Android
+analysis is therefore exploratory rather than confirmatory.
 USB charging was recorded rather
 than eliminated, and background load was not fully controllable. Battery
 temperature and Android thermal status are contextual observations, not direct
@@ -394,7 +440,12 @@ mixed-precision search, pruning, distillation, GPU delegates, or vendor NPUs.
 
 On the tested realme RMX3760 stack, quantization label and file size alone did not determine deployment performance. The 12 frozen flatbuffers spanned 53.93%-84.43% locked-test accuracy and 1.09-15.37 MiB, while runtime/thread choices changed latency order and median-versus-p95 criteria changed the Pareto frontier. Configuration errors and the MobileNetV3-Small full-INT8 quality loss remained part of the result rather than being hidden by fallback or post-test exclusion.
 
-For this phone and software stack only, a practical shortlist is mobilenet_v2_dynamic_int8__xnnpack_cpu__1t, mobilenet_v2_float16__xnnpack_cpu__1t, mobilenet_v2_float32__xnnpack_cpu__1t; selection among it should use the application's tolerance for median versus tail latency together with the frozen validation quality and artifact-size constraints. No cross-device recommendation follows from one phone, and a new device/runtime combination should rerun the same hashed, complete-trial protocol.
+For this phone and software stack only, the practical shortlist contains three
+one-thread XNNPACK configurations: MobileNetV2 dynamic INT8, FP16, and FP32.
+The choice among them depends on the application's tolerance for median and
+tail latency, together with frozen validation quality and artifact-size
+constraints. This shortlist is not a cross-device recommendation. A new device
+or runtime should rerun the same hashed, complete-trial protocol.
 
 # Declarations
 
@@ -433,6 +484,21 @@ records link executed outputs to their source models and data. The v1.0.0
 artifact is publicly available at https://doi.org/10.5281/zenodo.22082237, and
 the source repository is available at
 https://github.com/akhtarsaleem1/hardware-aware-quantization-android.
+
+## CRediT authorship contribution statement
+
+Akhtar Saleem: Conceptualization, Methodology, Software, Validation, Formal
+analysis, Investigation, Data curation, Visualization, Writing - original
+draft, Writing - review and editing, and Project administration.
+
+## Declaration of generative AI and AI-assisted technologies in the manuscript preparation process
+
+During the preparation of this work, the author used OpenAI Codex to assist
+with language refinement, manuscript organization, and the development and
+consistency checking of analysis and documentation code. After using this
+service, the author reviewed and edited the content as needed, verified the
+reported results against the retained experimental records, and takes full
+responsibility for the content of the publication.
 
 # References
 
