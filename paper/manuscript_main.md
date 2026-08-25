@@ -421,18 +421,18 @@ The DeepWeeds source archive is available under CC BY 4.0 from its official
 repository. Frozen split manifests, hashes, validation reports, raw benchmark
 observations, final per-sample predictions, and derived tables are included in
 the accompanying artifact package. Redistribution of source images follows the
-dataset license. A Zenodo record has been reserved for the reproducibility
-artifact at https://doi.org/10.5281/zenodo.22082237 and will be made public
-before manuscript submission.
+dataset license. The v1.0.0 reproducibility artifact is publicly available on
+Zenodo at https://doi.org/10.5281/zenodo.22082237.
 
 ## Code availability
 
 Training, conversion, parity evaluation, Android benchmarking, locked-test
 evaluation, statistical analysis, and figure-generation code are included in
 the reproducibility artifact. Environment reports and SHA-256 provenance
-records link executed outputs to their source models and data. The reserved
-artifact DOI is https://doi.org/10.5281/zenodo.22082237; the Zenodo record will
-be made public before manuscript submission.
+records link executed outputs to their source models and data. The v1.0.0
+artifact is publicly available at https://doi.org/10.5281/zenodo.22082237, and
+the source repository is available at
+https://github.com/akhtarsaleem1/hardware-aware-quantization-android.
 
 # References
 

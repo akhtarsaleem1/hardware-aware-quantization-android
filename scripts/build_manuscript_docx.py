@@ -434,6 +434,7 @@ def build(markdown: Path, bibliography: Path, output: Path) -> None:
         elif token.kind in ("list_bullet", "list_number"):
             p = doc.add_paragraph(style="List Bullet" if token.kind == "list_bullet" else "List Number")
             add_inline(p, str(token.value))
+            p.paragraph_format.keep_together = True
         elif token.kind == "table":
             add_table(doc, token.value, pending_caption)
             pending_caption = None
@@ -448,8 +449,8 @@ def build(markdown: Path, bibliography: Path, output: Path) -> None:
     core = doc.core_properties
     core.title = metadata["title"]
     core.subject = "Mobile AI quantization repeatability research manuscript"
-    core.author = ""
-    core.last_modified_by = ""
+    core.author = metadata["author"]
+    core.last_modified_by = metadata["author"]
     core.keywords = "Android, LiteRT, quantization, mobile inference, repeatability"
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output)

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite the Zenodo release."
+title: "Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android"
+type: software
+authors:
+  - family-names: Saleem
+    given-names: Akhtar
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0005-9440-224X"
+version: 1.0.0
+date-released: 2026-08-24
+doi: 10.5281/zenodo.22082237
+repository-code: "https://github.com/akhtarsaleem1/hardware-aware-quantization-android"
+url: "https://doi.org/10.5281/zenodo.22082237"
+license: MIT
+keywords:
+  - Android
+  - LiteRT
+  - TensorFlow Lite
+  - post-training quantization
+  - mobile inference
+  - tail latency
+  - repeatability
+  - hardware-aware benchmarking

@@ -55,22 +55,22 @@ def main() -> None:
 
     cover = f"""# Cover letter
 
-24 August 2026
+25 August 2026
 
 Editor-in-Chief  
 Journal of Systems Architecture
 
 Dear Editor,
 
-Please consider our original research manuscript, **“Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android,”** for publication in the *Journal of Systems Architecture*.
+Please consider my original research manuscript, **“Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android,”** for publication in the *Journal of Systems Architecture*.
 
 The manuscript presents an auditable, system-level study of 12 deployable LiteRT flatbuffers across 72 planned model/runtime/thread configurations on a lower-cost Android 15 phone. A post hoc bounded analysis retains two complete balanced trials after the incomplete third trial was excluded wholesale, so the Android evidence is explicitly exploratory rather than confirmatory. The contribution is deliberately narrower than another application comparison: it focuses on capture-session leakage control, a test split held closed until device selection was frozen, immutable per-inference observations, complete randomized trials, p95/p99 latency, rank stability, memory and thermal context, and explicit preservation of delegate/configuration failures.
 
 The locked 3,501-image evaluation produced {pct(models['accuracy'].min())}-{pct(models['accuracy'].max())} accuracy. The fastest mean trial median and p95 were {float(fastest_median['trial_median_mean_ms']):.2f} ms and {float(fastest_p95['trial_p95_mean_ms']):.2f} ms. File-size and median-latency order differed in {int(evidence['H1_size_vs_latency_rank_mismatch_contexts'])}/{int(evidence['H1_total_contexts'])} contexts, runtime changed quantization rank in {int(evidence['H2_runtime_rank_change_contexts'])}/{int(evidence['H2_total_comparable_contexts'])} comparisons, and median versus p95 criteria changed the Pareto frontier. {int(audit['failed_configurations'])} failed configurations were retained as evidence rather than replaced with fallback measurements.
 
-The work fits the journal's published scope in embedded/mobile systems and software/system architecture by examining how deployable model artifacts interact with runtime kernels, delegates, threading, and measurement design. We make no unverified claim about Clarivate indexing; that administrative check remains separate from the scientific submission package.
+The work fits the journal's published scope in embedded/mobile systems and software/system architecture by examining how deployable model artifacts interact with runtime kernels, delegates, threading, and measurement design. I make no unverified claim about Clarivate indexing; that administrative check remains separate from the scientific submission package.
 
-This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. A Zenodo record has been reserved at https://doi.org/10.5281/zenodo.22082237 and will be made public before manuscript submission.
+This manuscript is original, is not under consideration elsewhere, and has not been published previously. The sole author has approved the submission. Funding and conflict-of-interest declarations are included in the manuscript. The artifact package contains code, manifests, model and raw-data hashes, frozen selection evidence, per-sample predictions, tables, figures, the release APK, and an explicit record of an excluded incomplete ANR run. The v1.0.0 reproducibility artifact is publicly available at https://doi.org/10.5281/zenodo.22082237.
 
 Sincerely,
 
@@ -85,7 +85,7 @@ ORCID: https://orcid.org/0009-0005-9440-224X
 
 Primary scope target: **Journal of Systems Architecture** (Elsevier), original research article. Akhtar Saleem confirmed this target on 24 August 2026.
 
-The journal's official scope explicitly includes embedded and mobile systems and emphasizes software/system architecture. The manuscript is framed as a reusable systems measurement contribution rather than an application-only case study. A direct live Clarivate Master Journal List profile was not available to this workflow, so the package makes no SCIE claim. Before submission, the author should confirm the current journal status using both ISSNs in the live Master Journal List and recheck the current Guide for Authors.
+The journal's official scope explicitly includes embedded and mobile systems and emphasizes software/system architecture. The manuscript is framed as a reusable systems measurement contribution rather than an application-only case study. Elsevier's official Journal Insights page listed Science Citation Index Expanded (SCIE) coverage on 25 August 2026. A direct Clarivate Master Journal List profile was not captured by this workflow; recheck the current Guide for Authors immediately before submission.
 
 Prepared title: *Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android*.
 
@@ -95,13 +95,13 @@ Scientific package version: protocol 1.2.0; app 1.2.0+3; one locked-test session
 
     data = f"""# Data availability
 
-DeepWeeds is available under CC BY 4.0 from its official repository. The submission artifact contains the frozen capture-session-grouped manifests and hashes, training-only calibration indices, validation/parity reports, the balanced protocol-1.2 trials 1-2 Android CSV (SHA-256 `{audit['raw_csv_sha256']}`) plus immutable provenance for the incomplete source run, the locked-test per-sample prediction CSV and aggregate JSON, derived tables, and publication figures. Source images are not duplicated beyond what the DeepWeeds license and submission venue permit. A Zenodo record has been reserved for the reproducibility artifact at https://doi.org/10.5281/zenodo.22082237 and will be made public before manuscript submission.
+DeepWeeds is available under CC BY 4.0 from its official repository. The submission artifact contains the frozen capture-session-grouped manifests and hashes, training-only calibration indices, validation/parity reports, the balanced protocol-1.2 trials 1-2 Android CSV (SHA-256 `{audit['raw_csv_sha256']}`) plus immutable provenance for the incomplete source run, the locked-test per-sample prediction CSV and aggregate JSON, derived tables, and publication figures. Source images are not duplicated beyond what the DeepWeeds license and submission venue permit. The v1.0.0 reproducibility artifact is publicly available on Zenodo at https://doi.org/10.5281/zenodo.22082237.
 """
     (root / "paper/data_availability.md").write_text(data, encoding="utf-8")
 
     code = """# Code availability
 
-The artifact package includes dataset validation and grouped splitting, GPU-fail-closed training, post-training conversion, parity and flatbuffer checks, Flutter local inference and release benchmarking, independent raw-run audit, pretest Pareto selection, one-shot locked-test evaluation, statistical analysis, figure generation, manuscript population, and publication-readiness verification. Exact environment reports, APK/model/data hashes, and protocol files are included. The reproducibility artifact has the reserved Zenodo DOI https://doi.org/10.5281/zenodo.22082237; the record will be made public before manuscript submission.
+The artifact package includes dataset validation and grouped splitting, GPU-fail-closed training, post-training conversion, parity and flatbuffer checks, Flutter local inference and release benchmarking, independent raw-run audit, pretest Pareto selection, one-shot locked-test evaluation, statistical analysis, figure generation, manuscript population, and publication-readiness verification. Exact environment reports, APK/model/data hashes, and protocol files are included. The v1.0.0 reproducibility artifact is publicly available at https://doi.org/10.5281/zenodo.22082237, and the source repository is available at https://github.com/akhtarsaleem1/hardware-aware-quantization-android.
 """
     (root / "paper/code_availability.md").write_text(code, encoding="utf-8")
 

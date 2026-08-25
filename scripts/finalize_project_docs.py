@@ -53,7 +53,7 @@ def main() -> None:
 
     readme = f"""# Repeatable Quantization and Runtime Benchmarking on Android
 
-Status: **publication package complete; repository publication and live journal-index verification remain administrative checks**
+Status: **Zenodo v1.0.0 published; GitHub public; journal submission package ready for final upload checks**
 
 Final title:
 
@@ -133,10 +133,10 @@ artifact.
 
 Prepared for submission to the Journal of Systems Architecture. Author,
 affiliation, corresponding email, funding/conflict declarations, sole-author
-approval, and the reserved Zenodo DOI are populated. The Zenodo record at
-https://doi.org/10.5281/zenodo.22082237 must be published before journal upload.
-No SCI/SCIE indexing claim is made; verify the live Master Journal List and the
-current Guide for Authors immediately before submission.
+approval, and DOI metadata are populated. The v1.0.0 reproducibility artifact
+is publicly available at https://doi.org/10.5281/zenodo.22082237. Elsevier's
+official journal insights page listed SCIE coverage on 25 August 2026; recheck
+the current Guide for Authors immediately before submission.
 
 Publication gate: {readiness['status']}.
 """

@@ -2,7 +2,7 @@
 
 Primary scope target: **Journal of Systems Architecture** (Elsevier), original research article. Akhtar Saleem confirmed this target on 24 August 2026.
 
-The journal's official scope explicitly includes embedded and mobile systems and emphasizes software/system architecture. The manuscript is framed as a reusable systems measurement contribution rather than an application-only case study. A direct live Clarivate Master Journal List profile was not available to this workflow, so the package makes no SCIE claim. Before submission, the author should confirm the current journal status using both ISSNs in the live Master Journal List and recheck the current Guide for Authors.
+The journal's official scope explicitly includes embedded and mobile systems and emphasizes software/system architecture. The manuscript is framed as a reusable systems measurement contribution rather than an application-only case study. Elsevier's official Journal Insights page listed Science Citation Index Expanded (SCIE) coverage on 25 August 2026. A direct Clarivate Master Journal List profile was not captured by this workflow; recheck the current Guide for Authors immediately before submission.
 
 Prepared title: *Beyond Average Latency: Repeatability and Runtime-Dependent Quantization Rankings for Lightweight Vision Models on Android*.
 
